@@ -1,0 +1,13 @@
+Time resolution is 1 ps
+Starting ALU testbench...
+ADD: a =         10, b =          5, result =         15, zero = 0
+SLL: a = 00000001, b =          2, result = 00000004, zero = 0
+SLT: a =          5, b =         10, result =          1, zero = 0
+SLTU: a =          5, b =         10, result =          1, zero = 0
+XOR: a = 0f0f0f0f, b = f0f0f0f0, result = ffffffff, zero = 0
+SRL: a = 00000010, b =          2, result = 00000004, zero = 0
+OR: a = 0f0f0f0f, b = f0f0f0f0, result = ffffffff, zero = 0
+AND: a = 0f0f0f0f, b = f0f0f0f0, result = 00000000, zero = 1
+Zero test (ADD): a = 00000000, b = 00000000, result = 00000000, zero = 1
+ALU testbench completed.
+$stop called at time : 90 ns : File "E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/riscv_v1_2/riscv_v1_2.srcs/sim_1/new/ALU_V1_tb.v" Line 73
