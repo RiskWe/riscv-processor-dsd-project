@@ -1,6 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/riscv_v1_2/riscv_v1_2.srcs/sources_1/new/ALU_v1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU_v1
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/riscv_v1_2/riscv_v1_2.srcs/sim_1/new/ALU_V1_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/riscv_v1_2/riscv_v1_2.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
