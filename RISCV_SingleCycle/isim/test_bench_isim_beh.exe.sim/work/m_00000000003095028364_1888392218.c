@@ -23,7 +23,7 @@
 #endif
 static const char *ng0 = "E:/Study Material/MyGitHub/riscv-processor-dsd-project/RISCV_SingleCycle/REg_File.v";
 static unsigned int ng1[] = {10U, 0U};
-static unsigned int ng2[] = {16U, 0U};
+static int ng2[] = {15, 0};
 static int ng3[] = {0, 0};
 static int ng4[] = {32, 0};
 static unsigned int ng5[] = {0U, 0U};
@@ -68,7 +68,7 @@ LAB2:    xsi_set_current_line(31, ng0);
     t9 = (t8 + 64U);
     t10 = *((char **)t9);
     t11 = ((char*)((ng2)));
-    xsi_vlog_generic_convert_array_indices(t3, t4, t7, t10, 2, 1, t11, 5, 2);
+    xsi_vlog_generic_convert_array_indices(t3, t4, t7, t10, 2, 1, t11, 32, 1);
     t12 = (t3 + 4);
     t13 = *((unsigned int *)t12);
     t14 = (!(t13));

@@ -27,9 +27,6 @@ output [31:0] read_data1, read_data2;
 integer k;
 reg [31:0] Registers[31:0];
 
-initial begin
-    Registers[5'b10000] <= 32'b00000000000000000000000000001010;  // Binary index for 16th register
-end
 
 always @(posedge clk or posedge reset)
 begin
@@ -48,7 +45,5 @@ end
 
 assign read_data1 = Registers[Rs1];
 assign read_data2 = Registers[Rs2];
-
-
 
 endmodule

@@ -22,3 +22,6 @@ xst -intstyle ise -ifn "E:/Study Material/MyGitHub/riscv-processor-dsd-project/R
 ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx45-csg324-2 "main.ngc" main.ngd  
 map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
 map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
+xst -intstyle ise -ifn "E:/Study Material/MyGitHub/riscv-processor-dsd-project/RISCV_SingleCycle/main.xst" -ofn "E:/Study Material/MyGitHub/riscv-processor-dsd-project/RISCV_SingleCycle/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx45-csg324-2 "main.ngc" main.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 

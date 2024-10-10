@@ -5,10 +5,13 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="Simulator" num="904" delta="unknown" >Unable to remove previous simulation file <arg fmt="%s" index="1">isim/test_bench_isim_beh.exe.sim/test_bench_isim_beh.exe</arg>. Please check if you have another instance of this simulation running on your system, terminate it and then recompile your design. System Error Message: <arg fmt="%s" index="2">boost::filesystem::remove: Access is denied: &quot;isim\test_bench_isim_beh.exe.sim\test_bench_isim_beh.exe&quot;</arg>
+<msg type="warning" file="HDLCompiler" num="267" delta="unknown" >"E:/Study Material/MyGitHub/riscv-processor-dsd-project/RISCV_SingleCycle/test_bench.v" Line 31: Cannot find port <arg fmt="%s" index="1">read_data2</arg> on this module
 </msg>
 
-<msg type="error" file="Simulator" num="861" delta="unknown" >Failed to link the design
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"E:/Study Material/MyGitHub/riscv-processor-dsd-project/RISCV_SingleCycle/test_bench.v" Line 70: &lt;<arg fmt="%s" index="1">uut.Registers[16]</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="Simulator" num="778" delta="unknown" >Static elaboration of top level Verilog design unit(s) in library <arg fmt="%s" index="1">work</arg> failed
 </msg>
 
 </messages>
