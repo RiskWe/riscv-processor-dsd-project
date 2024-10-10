@@ -21,8 +21,8 @@
 module Control_Unit(instruction, Branch, MemRead, MemtoReg, ALUOp, MemWrite, ALUSrc, RegWrite);
 
 inout [6:0] instruction;
-output Branch, MemRead, MemtoReg, MemWrite, ALUSrc, RegWrite;
-output [1:0] ALUOp;
+output reg Branch, MemRead, MemtoReg, MemWrite, ALUSrc, RegWrite;
+output reg [1:0] ALUOp;
 
 always @(*)
 begin

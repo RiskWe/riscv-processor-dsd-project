@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module ALU_Control(ALUOp, fun7, fun3, ALUSrc, Control_out);
+module ALU_Control(ALUOp, fun7, fun3, Control_out);
 
 input fun7;
 input [2:0] fun3;

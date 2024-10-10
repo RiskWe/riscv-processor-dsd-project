@@ -22,7 +22,7 @@ module PC(clk, reset, PC_in, PC_out);
 
 input clk, reset;
 input 	 [31:0] PC_in;
-input reg [31:0] PC_out;
+output reg [31:0] PC_out;
 
 always @(posedge clk or posedge reset)
 begin

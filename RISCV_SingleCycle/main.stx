@@ -1,0 +1,82 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to E:/Study Material/MyGitHub/riscv-processor-dsd-project/RISCV_SingleCycle/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to E:/Study Material/MyGitHub/riscv-processor-dsd-project/RISCV_SingleCycle/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: main.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\REg_File.v" into library work
+Parsing module <REg_File>.
+Analyzing Verilog file "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\PCplus4.v" into library work
+Parsing module <PCplus4>.
+Analyzing Verilog file "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\PC.v" into library work
+Parsing module <PC>.
+Analyzing Verilog file "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\Mux.v" into library work
+Parsing module <Mux1>.
+Parsing module <Mux2>.
+Parsing module <Mux3>.
+Analyzing Verilog file "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\Instruction_Mem.v" into library work
+Parsing module <Instruction_Mem>.
+Analyzing Verilog file "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\ImmGen.v" into library work
+Parsing module <ImmGen>.
+Analyzing Verilog file "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\Data_memory.v" into library work
+Parsing module <Data_memory>.
+Analyzing Verilog file "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\Control_Unit.v" into library work
+Parsing module <Control_Unit>.
+Analyzing Verilog file "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\AND_logic.v" into library work
+Parsing module <AND_logic>.
+Analyzing Verilog file "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\ALU_unit.v" into library work
+Parsing module <ALU_unit>.
+Analyzing Verilog file "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\ALU_Control.v" into library work
+Parsing module <ALU_Control>.
+Analyzing Verilog file "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\Adder.v" into library work
+Parsing module <Adder>.
+Analyzing Verilog file "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\main.v" into library work
+Parsing module <main>.
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.53 secs
+ 
+--> 
+
+Total memory usage is 4448012 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

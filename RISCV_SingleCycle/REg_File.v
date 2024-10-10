@@ -25,11 +25,11 @@ input [4:0] Rs1, Rs2, Rd;
 input [31:0] Write_data;
 output [31:0] read_data1, read_data2;
 integer k;
-reg [31:0] Register[31:0];
+reg [31:0] Registers[31:0];
 
 always @(posedge clk or posedge reset)
 begin
-if()
+if(reset)
 	begin
 		for(k=0; k<32; k=k+1)
 		begin

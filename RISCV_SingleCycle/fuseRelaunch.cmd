@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "E:/Study Material/MyGitHub/riscv-processor-dsd-project/RISCV_SingleCycle/main_isim_beh.exe" -prj "E:/Study Material/MyGitHub/riscv-processor-dsd-project/RISCV_SingleCycle/main_beh.prj" "work.main" "work.glbl" 
