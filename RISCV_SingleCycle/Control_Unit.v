@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Control_Unit(instruction, Branch, MemRead, MemtoReg, ALUOp, MemWrite, RegWrite);
+module Control_Unit(instruction, Branch, MemRead, MemtoReg, ALUOp, MemWrite, ALUSrc, RegWrite);
 
 inout [6:0] instruction;
 output Branch, MemRead, MemtoReg, MemWrite, ALUSrc, RegWrite;
