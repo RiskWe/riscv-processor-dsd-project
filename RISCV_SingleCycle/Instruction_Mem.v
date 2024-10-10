@@ -26,6 +26,7 @@ output reg [31:0] instruction_out;
 integer k;
 reg [31:0] I_Mem[63:0];
 
+
 always@(posedge clk or posedge reset)
 begin
 if(reset)
@@ -34,8 +35,23 @@ if(reset)
 		begin
 		I_Mem[k] <= 32'b00;
 		end
+		
+	// Assign initial values
+        I_Mem[0] <= 32'b0000000_00000_00000_000_00000_0000000; // No operation (NOP)
+        I_Mem[4] <= 32'b0000000_11001_10000_000_01101_0110011; // ADD x13, x16, x25
+		  
 	end
 else
-	instruction_out <= I_Mem[read_address];
+	begin
+   // Fetch instruction from memory based on word-aligned address
+   instruction_out <= I_Mem[read_address];  // Shift right by 2 for word alignment
+	//instruction_out <= I_Mem[read_address]; for automated situations
+	end	
 end
+
+
+// Optional: A block to preload instructions (could be synthesized)
+
+
+
 endmodule

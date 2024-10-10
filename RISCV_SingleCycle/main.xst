@@ -1,6 +1,9 @@
-set -tmpdir "E:/Study Material/MyGitHub/riscv-processor-dsd-project/RISCV_SingleCycle/xst/projnav.tmp"
-set -xsthdpdir "E:/Study Material/MyGitHub/riscv-processor-dsd-project/RISCV_SingleCycle/xst"
-run -compileonly yes
+set -tmpdir "xst/projnav.tmp"
+set -xsthdpdir "xst"
+run
+-ifn main.prj
+-ofn main
+-ofmt NGC
 -p xc6slx45-2-csg324
 -top main
 -opt_mode Speed
@@ -47,4 +50,3 @@ run -compileonly yes
 -iob Auto
 -equivalent_register_removal YES
 -slice_utilization_ratio_maxmargin 5
--ifn main.prj

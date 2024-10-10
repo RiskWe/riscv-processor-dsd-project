@@ -28,9 +28,9 @@ initial begin
 clk = 0;
 reset = 1;
 #5;
-reset =0;
+reset = 0;
 #400;
-end 
+end
 
 always begin
 #5 clk = ~clk;
