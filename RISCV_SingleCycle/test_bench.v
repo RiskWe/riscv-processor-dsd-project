@@ -1,77 +1,62 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date:    17:18:04 10/10/2024 
-// Design Name: 
-// Module Name:    test_bench 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description: 
-// 
-// A testbench for verifying the functionality of the register file.
-// 
-// Dependencies: 
-//
-// Revision: 
-// Revision 0.01 - File Created
-// Additional Comments: 
-//
-//////////////////////////////////////////////////////////////////////////////////
-module test_bench;
 
-    reg clk, reset, RegWrite;            // Clock, reset, and write control signals
-    reg [4:0] Rd;                        // Register destination address
-    reg [31:0] Write_data;               // Data to write to the register
-    wire [31:0] read_data1, read_data2; // Read data outputs
+module PC_tb;
 
-    // Instantiate the main module (register file)
-    main uut (
-        .clk(clk),
-        .reset(reset),
-        .RegWrite(RegWrite_top),
-        .Rd(Rd),
-        .Write_data(WriteBack_top),
-        .read_data1(Rd1_top),
-        .read_data2(Rd2_top)
-    );
+// Inputs
+reg clk;
+reg reset;
+reg [31:0] PC_in;
 
-    // Clock generation
-    initial begin
-        clk = 0;
-        forever #5 clk = ~clk; // Toggle clock every 5 time units
-    end
+// Outputs
+wire [31:0] PC_out;
 
-    // Test procedure
-    initial begin
-        // Initialize signals
-        reset = 1;
-        RegWrite = 0;
-        Rd = 0;
-        Write_data = 0;
+// Instantiate the Unit Under Test (UUT)
+main uut(
+    .clk(clk), 
+    .reset(reset), 
+    .PCin_top(PC_in), 
+    .instruction_top(PC_out)
+);
 
-        // Wait for some time and release reset
-        #5;
-        reset = 0;
-        
-        // Test writing to register 16
-        RegWrite = 1;         // Enable write
-        Rd = 5'b10000;       // Address of register 16
-        Write_data = 32'hA5A5A5A5; // Example data to write
-        #10; // Wait for a clock cycle
+// Clock generation
+always #5 clk = ~clk; // 10ns clock period
 
-        RegWrite = 0; // Disable writing
-        #10; // Wait for another clock cycle
+initial begin
+    // Initialize Inputs
+    clk = 0;
+    reset = 1; // Assert reset initially
+    PC_in = 32'd0; // Start PC with 0
 
-        // Check if register 16 holds the value
-        // Use $monitor to continuously display the value
-        $monitor("At time %t, Register 16: %h", $time, uut.Registers[16]);
+    // Wait for global reset to finish
+    #10;
+    reset = 0; // Deassert reset
 
-        // End simulation after some time
-        #100;
-        $finish; // End simulation
-    end
+    // Apply PC input and check for correct output
+    #10;
+    PC_in = 32'd4;
+    #10;
+    PC_in = 32'd8;
+    #10;
+    PC_in = 32'd12;
+
+    // Assert reset and check if PC resets to zero
+    #10;
+    reset = 1; // Assert reset
+    #10;
+    reset = 0; // Deassert reset
+
+    // Apply more inputs after reset
+    #10;
+    PC_in = 32'd20;
+    #10;
+    PC_in = 32'd24;
+    
+    $stop; // Stop the simulation
+end
+
+// Monitor output
+initial begin
+    $monitor("Time: %d, Reset: %b, PC_in: %d, PC_out: %d", $time, reset, PC_in, PC_out);
+end
 
 endmodule

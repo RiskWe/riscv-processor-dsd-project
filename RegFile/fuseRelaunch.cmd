@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "E:/Study Material/My_Github_VisualCode/riscv-processor-dsd-project/RegFile/REg_File_tb_isim_beh.exe" -prj "E:/Study Material/My_Github_VisualCode/riscv-processor-dsd-project/RegFile/REg_File_tb_beh.prj" "work.REg_File_tb" "work.glbl" 

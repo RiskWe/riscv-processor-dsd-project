@@ -5,13 +5,16 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="267" delta="unknown" >"E:/Study Material/MyGitHub/riscv-processor-dsd-project/RISCV_SingleCycle/test_bench.v" Line 31: Cannot find port <arg fmt="%s" index="1">read_data2</arg> on this module
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"E:/Study Material/My_Github_VisualCode/riscv-processor-dsd-project/RISCV_SingleCycle/test_bench.v" Line 17: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">PCin_top</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"E:/Study Material/MyGitHub/riscv-processor-dsd-project/RISCV_SingleCycle/test_bench.v" Line 70: &lt;<arg fmt="%s" index="1">uut.Registers[16]</arg>&gt; is not declared.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"E:/Study Material/My_Github_VisualCode/riscv-processor-dsd-project/RISCV_SingleCycle/test_bench.v" Line 18: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">instruction_top</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="error" file="Simulator" num="778" delta="unknown" >Static elaboration of top level Verilog design unit(s) in library <arg fmt="%s" index="1">work</arg> failed
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"E:/Study Material/My_Github_VisualCode/riscv-processor-dsd-project/RISCV_SingleCycle/main.v" Line 35: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">PC_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"E:/Study Material/My_Github_VisualCode/riscv-processor-dsd-project/RISCV_SingleCycle/main.v" Line 41: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">read_address</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
 </messages>

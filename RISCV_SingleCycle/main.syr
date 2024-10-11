@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.20 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.20 secs
  
 --> Reading design: main.prj
 
@@ -105,222 +105,18 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\REg_File.v" into library work
-Parsing module <REg_File>.
-Analyzing Verilog file "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\PCplus4.v" into library work
-Parsing module <PCplus4>.
-Analyzing Verilog file "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\PC.v" into library work
+Analyzing Verilog file "E:\Study Material\My_Github_VisualCode\riscv-processor-dsd-project\RISCV_SingleCycle\PC.v" into library work
 Parsing module <PC>.
-Analyzing Verilog file "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\Mux.v" into library work
-Parsing module <Mux1>.
-Parsing module <Mux2>.
-Parsing module <Mux3>.
-Analyzing Verilog file "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\Instruction_Mem.v" into library work
-Parsing module <Instruction_Mem>.
-Analyzing Verilog file "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\ImmGen.v" into library work
-Parsing module <ImmGen>.
-Analyzing Verilog file "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\Data_memory.v" into library work
-Parsing module <Data_memory>.
-Analyzing Verilog file "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\Control_Unit.v" into library work
-Parsing module <Control_Unit>.
-Analyzing Verilog file "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\AND_logic.v" into library work
-Parsing module <AND_logic>.
-Analyzing Verilog file "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\ALU_unit.v" into library work
-Parsing module <ALU_unit>.
-Analyzing Verilog file "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\ALU_Control.v" into library work
-Parsing module <ALU_Control>.
-Analyzing Verilog file "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\Adder.v" into library work
-Parsing module <Adder>.
-Analyzing Verilog file "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\main.v" into library work
+Analyzing Verilog file "E:\Study Material\My_Github_VisualCode\riscv-processor-dsd-project\RISCV_SingleCycle\main.v" into library work
 Parsing module <main>.
-
-=========================================================================
-*                            HDL Elaboration                            *
-=========================================================================
-
-Elaborating module <main>.
-
-Elaborating module <PC>.
-
-Elaborating module <PCplus4>.
-
-Elaborating module <Instruction_Mem>.
-
-Elaborating module <REg_File>.
-
-Elaborating module <ImmGen>.
-
-Elaborating module <Control_Unit>.
-
-Elaborating module <ALU_Control>.
-
-Elaborating module <ALU_unit>.
-
-Elaborating module <Mux1>.
-
-Elaborating module <Adder>.
-
-Elaborating module <AND_logic>.
-
-Elaborating module <Mux2>.
-
-Elaborating module <Data_memory>.
-
-Elaborating module <Mux3>.
-WARNING:Xst:2972 - "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\main.v" line 30. All outputs of instance <PC> of block <PC> are unconnected in block <main>. Underlying logic will be removed.
-WARNING:Xst:2972 - "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\main.v" line 33. All outputs of instance <PCplus4> of block <PCplus4> are unconnected in block <main>. Underlying logic will be removed.
-WARNING:Xst:2972 - "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\main.v" line 36. All outputs of instance <Instruction_Mem> of block <Instruction_Mem> are unconnected in block <main>. Underlying logic will be removed.
-WARNING:Xst:2972 - "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\main.v" line 39. All outputs of instance <REg_File> of block <REg_File> are unconnected in block <main>. Underlying logic will be removed.
-WARNING:Xst:2972 - "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\main.v" line 42. All outputs of instance <ImmGen> of block <ImmGen> are unconnected in block <main>. Underlying logic will be removed.
-WARNING:Xst:2972 - "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\main.v" line 45. All outputs of instance <Control_Unit> of block <Control_Unit> are unconnected in block <main>. Underlying logic will be removed.
-WARNING:Xst:2972 - "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\main.v" line 48. All outputs of instance <ALU_Control> of block <ALU_Control> are unconnected in block <main>. Underlying logic will be removed.
-WARNING:Xst:2972 - "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\main.v" line 51. All outputs of instance <ALU_unit> of block <ALU_unit> are unconnected in block <main>. Underlying logic will be removed.
-WARNING:Xst:2972 - "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\main.v" line 54. All outputs of instance <ALU_mux> of block <Mux1> are unconnected in block <main>. Underlying logic will be removed.
-WARNING:Xst:2972 - "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\main.v" line 57. All outputs of instance <Adder> of block <Adder> are unconnected in block <main>. Underlying logic will be removed.
-WARNING:Xst:2972 - "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\main.v" line 60. All outputs of instance <AND_logic> of block <AND_logic> are unconnected in block <main>. Underlying logic will be removed.
-WARNING:Xst:2972 - "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\main.v" line 63. All outputs of instance <Adder_mux> of block <Mux2> are unconnected in block <main>. Underlying logic will be removed.
-WARNING:Xst:2972 - "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\main.v" line 66. All outputs of instance <Data_memory> of block <Data_memory> are unconnected in block <main>. Underlying logic will be removed.
-WARNING:Xst:2972 - "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\main.v" line 69. All outputs of instance <Memory_mux> of block <Mux3> are unconnected in block <main>. Underlying logic will be removed.
-
-=========================================================================
-*                           HDL Synthesis                               *
-=========================================================================
-
-Synthesizing Unit <main>.
-    Related source file is "E:\Study Material\MyGitHub\riscv-processor-dsd-project\RISCV_SingleCycle\main.v".
-    Summary:
-	no macro.
-Unit <main> synthesized.
-
-=========================================================================
-HDL Synthesis Report
-
-Found no macro
-=========================================================================
-
-=========================================================================
-*                       Advanced HDL Synthesis                          *
-=========================================================================
-
-
-=========================================================================
-Advanced HDL Synthesis Report
-
-Found no macro
-=========================================================================
-
-=========================================================================
-*                         Low Level Synthesis                           *
-=========================================================================
-
-Optimizing unit <main> ...
-
-Mapping all equations...
-Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block main, actual ratio is 0.
-
-Final Macro Processing ...
-
-=========================================================================
-Final Register Report
-
-Found no macro
-=========================================================================
-
-=========================================================================
-*                           Partition Report                            *
-=========================================================================
-
-Partition Implementation Status
--------------------------------
-
-  No Partitions were found in this design.
-
--------------------------------
-
-=========================================================================
-*                            Design Summary                             *
-=========================================================================
-
-Top Level Output File Name         : main.ngc
-
-Primitive and Black Box Usage:
-------------------------------
-
-Device utilization summary:
----------------------------
-
-Selected Device : 6slx45csg324-2 
-
-
-Slice Logic Utilization: 
-
-Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:      0
-   Number with an unused Flip Flop:       0  out of      0         
-   Number with an unused LUT:             0  out of      0         
-   Number of fully used LUT-FF pairs:     0  out of      0         
-   Number of unique control sets:         0
-
-IO Utilization: 
- Number of IOs:                           2
- Number of bonded IOBs:                   0  out of    218     0%  
-
-Specific Feature Utilization:
-
----------------------------
-Partition Resource Summary:
----------------------------
-
-  No Partitions were found in this design.
-
----------------------------
-
-
-=========================================================================
-Timing Report
-
-NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
-      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
-      GENERATED AFTER PLACE-and-ROUTE.
-
-Clock Information:
-------------------
-No clock signals found in this design
-
-Asynchronous Control Signals Information:
-----------------------------------------
-No asynchronous control signals found in this design
-
-Timing Summary:
----------------
-Speed Grade: -2
-
-   Minimum period: No path found
-   Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: No path found
-   Maximum combinational path delay: No path found
-
-Timing Details:
----------------
-All values displayed in nanoseconds (ns)
-
-=========================================================================
-
-Cross Clock Domains Report:
---------------------------
-
-=========================================================================
-
-
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.25 secs
- 
+ERROR:HDLCompiler:53 - "E:\Study Material\My_Github_VisualCode\riscv-processor-dsd-project\RISCV_SingleCycle\main.v" Line 21: <PCin_top> is not a port.
+ERROR:HDLCompiler:598 - "E:\Study Material\My_Github_VisualCode\riscv-processor-dsd-project\RISCV_SingleCycle\main.v" Line 21: Module <main> ignored due to previous errors.
+Verilog file E:\Study Material\My_Github_VisualCode\riscv-processor-dsd-project\RISCV_SingleCycle\main.v ignored due to errors
 --> 
 
-Total memory usage is 4519952 kilobytes
+Total memory usage is 4450556 kilobytes
 
-Number of errors   :    0 (   0 filtered)
-Number of warnings :   14 (   0 filtered)
+Number of errors   :    2 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 
