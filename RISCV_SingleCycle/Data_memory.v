@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Data_memory(clk, reset, MemWrite, MemRead, read_adderess, Write_data, Mem);
+module Data_memory(clk, reset, MemWrite, MemRead, read_address, Write_data, MemData_out);
 
 input clk, reset, MemWrite, MemRead;
 input [31:0] read_address, Write_data;
@@ -26,7 +26,7 @@ output [31:0] MemData_out;
 integer k;
 reg [31:0] D_Memory[63:0];
 
-always @(posedge clk or posedege reset)
+always @(posedge clk or posedge reset)
 begin
 if(reset)
 	begin 
@@ -41,7 +41,3 @@ else if(MemWrite) begin
 end
 assign MemData_out = (MemRead) ? D_Memory[read_address] : 32'b00;
 endmodule	
-
-
-
-endmodule

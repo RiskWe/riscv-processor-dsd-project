@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "E:/Study Material/MyGitHub/riscv-processor-dsd-project/RISCV_SingleCycle/test_bench.xst" -ofn "E:/Study Material/MyGitHub/riscv-processor-dsd-project/RISCV_SingleCycle/test_bench.syr" 
+xst -intstyle ise -ifn "E:/Study Material/MyGitHub/riscv-processor-dsd-project/RISCV_SingleCycle/test_bench.xst" -ofn "E:/Study Material/MyGitHub/riscv-processor-dsd-project/RISCV_SingleCycle/test_bench.syr" 
+xst -intstyle ise -ifn "E:/Study Material/MyGitHub/riscv-processor-dsd-project/RISCV_SingleCycle/test_bench.xst" -ofn "E:/Study Material/MyGitHub/riscv-processor-dsd-project/RISCV_SingleCycle/test_bench.syr" 
+xst -intstyle ise -ifn "E:/Study Material/MyGitHub/riscv-processor-dsd-project/RISCV_SingleCycle/test_bench.xst" -ofn "E:/Study Material/MyGitHub/riscv-processor-dsd-project/RISCV_SingleCycle/test_bench.syr" 
+xst -intstyle ise -ifn "E:/Study Material/MyGitHub/riscv-processor-dsd-project/RISCV_SingleCycle/test_bench.xst" -ofn "E:/Study Material/MyGitHub/riscv-processor-dsd-project/RISCV_SingleCycle/test_bench.syr" 
+xst -intstyle ise -ifn "E:/Study Material/MyGitHub/riscv-processor-dsd-project/RISCV_SingleCycle/test_bench.xst" -ofn "E:/Study Material/MyGitHub/riscv-processor-dsd-project/RISCV_SingleCycle/test_bench.syr" 
+xst -intstyle ise -ifn "E:/Study Material/MyGitHub/riscv-processor-dsd-project/RISCV_SingleCycle/test_bench.xst" -ofn "E:/Study Material/MyGitHub/riscv-processor-dsd-project/RISCV_SingleCycle/test_bench.syr" 
+xst -intstyle ise -ifn "E:/Study Material/MyGitHub/riscv-processor-dsd-project/RISCV_SingleCycle/test_bench.xst" -ofn "E:/Study Material/MyGitHub/riscv-processor-dsd-project/RISCV_SingleCycle/test_bench.syr" 
+xst -intstyle ise -ifn "E:/Study Material/MyGitHub/riscv-processor-dsd-project/RISCV_SingleCycle/test_bench.xst" -ofn "E:/Study Material/MyGitHub/riscv-processor-dsd-project/RISCV_SingleCycle/test_bench.syr" 
+xst -intstyle ise -ifn "E:/Study Material/MyGitHub/riscv-processor-dsd-project/RISCV_SingleCycle/test_bench.xst" -ofn "E:/Study Material/MyGitHub/riscv-processor-dsd-project/RISCV_SingleCycle/test_bench.syr" 
+xst -intstyle ise -ifn "E:/Study Material/MyGitHub/riscv-processor-dsd-project/RISCV_SingleCycle/test_bench.xst" -ofn "E:/Study Material/MyGitHub/riscv-processor-dsd-project/RISCV_SingleCycle/test_bench.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx45-csg324-2 "test_bench.ngc" test_bench.ngd  

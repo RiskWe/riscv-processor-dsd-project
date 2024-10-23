@@ -1,0 +1,28 @@
+ISim log file
+Running: E:\Study Material\My_Github_VisualCode\riscv-processor-dsd-project\RISCV_SingleCycle\PC_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb E:/Study Material/My_Github_VisualCode/riscv-processor-dsd-project/RISCV_SingleCycle/PC_tb_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+WARNING: File "E:/Study Material/My_Github_VisualCode/riscv-processor-dsd-project/RISCV_SingleCycle/main.v" Line 25.  For instance uut/PC/, width 32 of formal port PC_in is not equal to width 1 of actual signal PCin_top.
+WARNING: File "E:/Study Material/My_Github_VisualCode/riscv-processor-dsd-project/RISCV_SingleCycle/main.v" Line 35.  For instance uut/PC/, width 32 of formal port PC_out is not equal to width 1 of actual signal PC_top.
+WARNING: File "E:/Study Material/My_Github_VisualCode/riscv-processor-dsd-project/RISCV_SingleCycle/main.v" Line 35.  For instance uut/Instruction_Mem/, width 32 of formal port read_address is not equal to width 1 of actual signal PC_top.
+WARNING: File "E:/Study Material/My_Github_VisualCode/riscv-processor-dsd-project/RISCV_SingleCycle/main.v" Line 26.  For instance uut/Instruction_Mem/, width 32 of formal port instruction_out is not equal to width 1 of actual signal instruction_top.
+WARNING: File "E:/Study Material/My_Github_VisualCode/riscv-processor-dsd-project/RISCV_SingleCycle/test_bench.v" Line 8.  For instance PC_tb/uut/, width 1 of formal port PCin_top is not equal to width 32 of actual variable PC_in. 
+WARNING: File "E:/Study Material/My_Github_VisualCode/riscv-processor-dsd-project/RISCV_SingleCycle/test_bench.v" Line 11.  For instance PC_tb/uut/, width 1 of formal port instruction_top is not equal to width 32 of actual signal PC_out.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Time:                    0, Reset: 1, PC_in:          0, PC_out:          X
+Time:                   10, Reset: 0, PC_in:          0, PC_out:          X
+Time:                   20, Reset: 0, PC_in:          4, PC_out:          X
+Time:                   30, Reset: 0, PC_in:          8, PC_out:          X
+Time:                   40, Reset: 0, PC_in:         12, PC_out:          X
+Time:                   50, Reset: 1, PC_in:         12, PC_out:          X
+Time:                   60, Reset: 0, PC_in:         12, PC_out:          X
+Time:                   70, Reset: 0, PC_in:         20, PC_out:          X
+Stopped at time : 80 ns :  in File "E:/Study Material/My_Github_VisualCode/riscv-processor-dsd-project/RISCV_SingleCycle/test_bench.v" Line 54 
