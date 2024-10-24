@@ -18,15 +18,12 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-	module main(clk, reset, PCin_top, instruction_top);
+module main(clk, reset, PCin_top, instruction_top);
 
 input clk,reset;
-
-input PCin_top;
-output instruction_top;
-
-
-//wire [31:0] PC_top, instruction_top, Rd1_top, Rd2_top, ImmExt_top, mux1_top, Sum_out_top, NextoPC_top, PCin_top, address_top, Memdata_top, WriteBack_top;
+input [31:0] PCin_top;
+output [31:0] instruction_top;
+wire [31:0] PC_top,Rd1_top, Rd2_top, ImmExt_top, mux1_top, Sum_out_top, NextoPC_top, PCin_top, address_top, Memdata_top, WriteBack_top;
 wire RegWrite_top, ALUSrc_top, zero_top, branch_top, sel2_top, MemtoReg_top, MemWrite_top, MemRead_top;
 wire [1:0] ALUOp_top;
 wire [3:0] Control_top;

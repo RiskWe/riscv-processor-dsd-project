@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISCV_SingleCycle/Instruction_Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISCV_SingleCycle/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISCV_SingleCycle/main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/riscV_ss_versionR/project_1/project_1.srcs/sim_1/new/main_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_tb

@@ -1,5 +1,4 @@
 `timescale 1ns / 1ps
-
 module PC_tb;
 
 // Inputs
@@ -8,55 +7,50 @@ reg reset;
 reg [31:0] PC_in;
 
 // Outputs
-wire [31:0] PC_out;
+wire [31:0] PC_top;
 
 // Instantiate the Unit Under Test (UUT)
 main uut(
     .clk(clk), 
     .reset(reset), 
-    .PCin_top(PC_in), 
-    .instruction_top(PC_out)
+    .PCin_top(PC_in),
+	 .PC_top(PC_top)	 
 );
 
-// Clock generation
-always #5 clk = ~clk; // 10ns clock period
+// Clock generation: 10ns clock period
+always #10 clk = ~clk;
 
 initial begin
     // Initialize Inputs
     clk = 0;
-    reset = 1; // Assert reset initially
-    PC_in = 32'd0; // Start PC with 0
+    reset = 1;
+    #10; //Rise
+	 #10; //Down
+    reset = 0;
 
-    // Wait for global reset to finish
-    #10;
-    reset = 0; // Deassert reset
+	 #10; //Rise
+	 #10; //Down
+	 
+    PC_in = 32'd0;  // Fetch first instruction
+    #10; //Rise
+	 #10; //Down
 
-    // Apply PC input and check for correct output
-    #10;
-    PC_in = 32'd4;
-    #10;
-    PC_in = 32'd8;
-    #10;
-    PC_in = 32'd12;
+    PC_in = 32'd4;  // Fetch second instruction
+    #10; //Rise
+	 #10; //Down
 
-    // Assert reset and check if PC resets to zero
-    #10;
-    reset = 1; // Assert reset
-    #10;
-    reset = 0; // Deassert reset
+    PC_in = 32'd8;  // Fetch third instruction
+    #10; //Rise
+	 #10; //Down
 
-    // Apply more inputs after reset
-    #10;
-    PC_in = 32'd20;
-    #10;
-    PC_in = 32'd24;
-    
-    $stop; // Stop the simulation
+    PC_in = 32'd12; // Fetch fourth instruction
+    #10; //Rise
+	 #10; //Down
+    $stop;  // Stop the simulation
 end
 
 // Monitor output
-initial begin
-    $monitor("Time: %d, Reset: %b, PC_in: %d, PC_out: %d", $time, reset, PC_in, PC_out);
-end
+// Monitor output only on clock edges
+
 
 endmodule

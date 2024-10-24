@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../RISCV_SingleCycle/Instruction_Mem.v" \
+"../../../../../../RISCV_SingleCycle/PC.v" \
+"../../../../../../RISCV_SingleCycle/main.v" \
+"../../../../project_1.srcs/sim_1/new/main_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

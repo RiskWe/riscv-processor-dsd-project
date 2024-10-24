@@ -1,0 +1,10 @@
+0.7
+2020.2
+Jun 14 2024
+10:04:17
+E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISCV_SingleCycle/Instruction_Mem.v,1729762120,verilog,,E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISCV_SingleCycle/PC.v,,Instruction_Mem,,,,,,,,
+E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISCV_SingleCycle/PC.v,1729763055,verilog,,E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISCV_SingleCycle/main.v,,PC,,,,,,,,
+E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISCV_SingleCycle/main.v,1729762002,verilog,,E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/riscV_ss_versionR/project_1/project_1.srcs/sim_1/new/main_tb.v,,main,,,,,,,,
+E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/riscV_ss_versionR/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/riscV_ss_versionR/project_1/project_1.srcs/sim_1/new/Ins_mem_tb.v,1729759960,verilog,,,,Instruction_Mem_tb,,,,,,,,
+E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/riscV_ss_versionR/project_1/project_1.srcs/sim_1/new/main_tb.v,1729763406,verilog,,,,main_tb,,,,,,,,

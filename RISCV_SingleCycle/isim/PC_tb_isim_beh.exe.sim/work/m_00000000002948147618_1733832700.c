@@ -21,13 +21,16 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "E:/Study Material/My_Github_VisualCode/riscv-processor-dsd-project/RISCV_SingleCycle/PC.v";
+static const char *ng0 = "C:/Users/ruchi/riscv-processor-dsd-project/RISCV_SingleCycle/PC.v";
 static unsigned int ng1[] = {0U, 0U};
+static const char *ng2 = "Else block executed at time %0t";
+static const char *ng3 = "Else block executed at time %d";
 
 
 
 static void Always_24_0(char *t0)
 {
+    char t13[16];
     char *t1;
     char *t2;
     char *t3;
@@ -74,14 +77,22 @@ LAB7:    xsi_set_current_line(29, ng0);
     t2 = (t0 + 1368U);
     t3 = *((char **)t2);
     t2 = (t0 + 1768);
-    xsi_vlogvar_wait_assign_value(t2, t3, 0, 0, 32, 0LL);
+    xsi_vlogvar_assign_value(t2, t3, 0, 0, 32);
 
-LAB8:    goto LAB2;
+LAB8:    xsi_set_current_line(30, ng0);
+    t2 = xsi_vlog_time(t13, 1000.0000000000000, 1000.0000000000000);
+    xsi_vlogfile_write(1, 0, 0, ng2, 2, t0, (char)118, t13, 64);
+    xsi_set_current_line(31, ng0);
+    t2 = (t0 + 1768);
+    t3 = (t2 + 56U);
+    t4 = *((char **)t3);
+    xsi_vlogfile_write(1, 0, 0, ng3, 2, t0, (char)118, t4, 32);
+    goto LAB2;
 
 LAB6:    xsi_set_current_line(27, ng0);
     t11 = ((char*)((ng1)));
     t12 = (t0 + 1768);
-    xsi_vlogvar_wait_assign_value(t12, t11, 0, 0, 32, 0LL);
+    xsi_vlogvar_assign_value(t12, t11, 0, 0, 32);
     goto LAB8;
 
 }
