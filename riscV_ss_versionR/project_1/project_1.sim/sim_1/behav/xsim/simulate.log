@@ -1,0 +1,16 @@
+Time resolution is 1 ps
+Read Address: xxxxxxxx, Instruction: xxxxxxxx
+Read Address: 00000000, Instruction: 006283b3
+Read Address: 00000004, Instruction: 006283b3
+Read Address: 00000008, Instruction: 006283b3
+Read Address: 0000000c, Instruction: 006283b3
+Read Address: 00000010, Instruction: 006283b3
+Read Address: 00000014, Instruction: 006283b3
+Read Address: 00000018, Instruction: 00000000
+Read Address: 0000001c, Instruction: 00000000
+After 8 clock pulses:
+Instruction = 00000000
+Read Register 1:          0
+Read Register 2:          0
+Read Address: 00000020, Instruction: 00000000
+$finish called at time : 102 ns : File "E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/riscV_ss_versionR/project_1/project_1.srcs/sim_1/new/main_tb.v" Line 52

@@ -5,7 +5,7 @@
 // 
 // Create Date:    14:58:21 10/09/2024 
 // Design Name: 
-// Module Name:    REg_File 
+// Module Name:    Reg_File 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,32 +18,40 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module REg_File(clk, reset, RegWrite, Rs1, Rs2, Rd, Write_data, read_data1, read_data2);
+module Reg_File (
+    input clk, 
+    input reset, 
+    input RegWrite, 
+    input [4:0] Rs1, 
+    input [4:0] Rs2, 
+    input [4:0] Rd, 
+    input [31:0] Write_data, 
+    output reg [31:0] read_data1,  
+    output reg [31:0] read_data2   
+);
 
-input clk, reset, RegWrite;
-input [4:0] Rs1, Rs2, Rd;
-input [31:0] Write_data;
-output [31:0] read_data1, read_data2;
-integer k;
-reg [31:0] Registers[31:0];
+    // Register array to store values
+    reg [31:0] Registers [31:0];
+    integer k; // Declare integer k at module level
 
+    // Register initialization on reset
+    always @(posedge clk or posedge reset) begin
+        if (reset) begin
+            // Reset the registers; initialize each register with its index value
+            for (k = 0; k < 32; k = k + 1) begin
+                Registers[k] <= k; // Initialize each register with its index value
+            end
+        end
+        else if (RegWrite) begin
+            // Write data to the specified register
+            Registers[Rd] <= Write_data;
+        end
+    end
 
-always @(posedge clk or posedge reset)
-begin
-if(reset)
-	begin
-		for(k=0; k<32; k=k+1)
-		begin
-		Registers[k] <= 32'b00;
-		end
-	end
-else if(RegWrite) 
-	begin
-	Registers[Rd] <= Write_data;
-	end
-end
-
-assign read_data1 = Registers[Rs1];
-assign read_data2 = Registers[Rs2];
+    // Combinational logic to read data from registers
+    always @(*) begin
+        read_data1 = Registers[Rs1];
+        read_data2 = Registers[Rs2];
+    end
 
 endmodule

@@ -13,6 +13,7 @@ Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.PC
 Compiling module xil_defaultlib.Instruction_Mem
+Compiling module xil_defaultlib.Reg_File
 Compiling module xil_defaultlib.main
 Compiling module xil_defaultlib.main_tb
 Compiling module xil_defaultlib.glbl

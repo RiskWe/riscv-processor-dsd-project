@@ -2,6 +2,7 @@
 verilog xil_defaultlib  \
 "../../../../../../RISCV_SingleCycle/Instruction_Mem.v" \
 "../../../../../../RISCV_SingleCycle/PC.v" \
+"../../../../../../RISCV_SingleCycle/REg_File.v" \
 "../../../../../../RISCV_SingleCycle/main.v" \
 "../../../../project_1.srcs/sim_1/new/main_tb.v" \
 

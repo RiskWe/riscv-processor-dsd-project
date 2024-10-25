@@ -15,12 +15,12 @@ module Instruction_Mem(clk, reset, read_address, instruction_out);
             end
             
             // Assign initial values for testing
-            I_Mem[0] <= 32'd3;  // No operation (NOP)
-            I_Mem[1] <= 32'd6;  // ADD x13, x16, x25 (dummy instruction)
-            I_Mem[2] <= 32'd9;  // No operation (NOP)
-            I_Mem[3] <= 32'd12; // ADD x13, x16, x25 (dummy instruction)
-            I_Mem[4] <= 32'd15; // No operation (NOP)
-            I_Mem[5] <= 32'd18; // ADD x13, x16, x25 (dummy instruction)
+            I_Mem[0] <= 32'h006283B3;  // NOP: addi x0, x0, 0
+            I_Mem[1] <= 32'h006283B3;  // addi x3, x0, 3
+            I_Mem[2] <= 32'h006283B3;  // addi x4, x0, 10
+            I_Mem[3] <= 32'h006283B3;  // addi x6, x0, 20
+            I_Mem[4] <= 32'h006283B3;  // add x5, x3, x4
+            I_Mem[5] <= 32'h006283B3;  // add x6, x5, x6
         end
     end
 
