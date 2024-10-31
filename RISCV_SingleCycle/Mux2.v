@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Mux2(sel1, A2, B2, Mux2_out);
+module Mux2(sel2, A2, B2, Mux2_out);
 
 input sel2;
 input [31:0] A2, B2;

@@ -34,21 +34,25 @@ module Reg_File (
     reg [31:0] Registers [31:0];
     integer k; // Declare integer k at module level
 
-    // Register initialization on reset
-    always @(posedge clk or posedge reset) begin
+    // Synchronous reset to zero
+    always @(posedge clk) begin
         if (reset) begin
-            // Reset the registers; initialize each register with its index value
+            // Reset all registers to zero
             for (k = 0; k < 32; k = k + 1) begin
-                Registers[k] <= k; // Initialize each register with its index value
+                Registers[k] <= 32'h00000000;
             end
-        end
-        else if (RegWrite) begin
-            // Write data to the specified register
-            Registers[Rd] <= Write_data;
         end
     end
 
-    // Combinational logic to read data from registers
+    // Write operation on the negative edge of the clock if RegWrite is high
+    always @(negedge clk) begin
+        if (RegWrite && Rd != 5'd0) begin
+            // Write data to the specified register (ignoring x0 as per convention)
+            Registers[Rd] <= Write_data;
+        end    
+    end
+
+    // Continuous reading for Rs1 and Rs2
     always @(*) begin
         read_data1 = Registers[Rs1];
         read_data2 = Registers[Rs2];
