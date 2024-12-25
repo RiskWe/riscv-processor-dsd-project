@@ -38,7 +38,7 @@ module main_tb;
         #9 reset = 0;     // Deassert reset at timestamp 12 ns
 
         // Simulation time limit (e.g., 100 clock cycles)
-        #100 $finish;
+        #500 $finish;
     end
 
     // Monitor outputs continuously
