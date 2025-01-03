@@ -1,0 +1,2 @@
+Time resolution is 1 ps
+WARNING: File memfile.hex referenced on E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Memory_Cycle.v at line 58 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.

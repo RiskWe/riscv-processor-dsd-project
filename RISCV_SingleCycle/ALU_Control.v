@@ -1,26 +1,3 @@
-`timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date:    13:23:17 10/10/2024 
-// Design Name: 
-// Module Name:    ALU_Control 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description:    This module implements the ALU Control logic for a RISC-V 
-//                 processor. It generates a 4-bit control signal to dictate the
-//                 specific ALU operation based on the ALUOp, funct7, and funct3 fields.
-//
-// Dependencies:   None
-//
-// Revision: 
-// Revision 0.01 - File Created
-// Additional Comments: 
-//
-//////////////////////////////////////////////////////////////////////////////////
-
 module ALU_Control(
     input [1:0] ALUOp,         // 2-bit ALU operation code from the Control Unit
     input fun7,                // Most significant bit of funct7 (7th bit of instruction)
@@ -43,10 +20,15 @@ module ALU_Control(
             6'b10_1_000: Control_out <= 4'b0110; // SUB (funct7 = 1)
             6'b10_0_111: Control_out <= 4'b0000; // AND operation
             6'b10_0_110: Control_out <= 4'b0001; // OR operation
-            
-            // Add additional cases here for other R-type instructions if needed
+            6'b10_0_100: Control_out <= 4'b0100; // XOR operation
+            6'b10_0_010: Control_out <= 4'b0111; // SLT (Set Less Than)
+            6'b10_0_011: Control_out <= 4'b1000; // SLTU (Set Less Than Unsigned)
+            6'b10_0_001: Control_out <= 4'b1001; // SLL (Shift Left Logical)
+            6'b10_0_101: Control_out <= 4'b1010; // SRL (Shift Right Logical)
+            6'b10_1_101: Control_out <= 4'b1011; // SRA (Shift Right Arithmetic)
 
-            default: Control_out <= 4'b0000; // Default case: Perform AND (safe default)
+            // Default case: Perform AND (safe default)
+            default: Control_out <= 4'b0000;
         endcase
     end
 

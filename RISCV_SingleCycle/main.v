@@ -1,12 +1,14 @@
-module main(clk, reset, instruction_top, Rd1_top, Rd2_top, address_top, PCin_top, Control_top);
+module main(clk, reset, func3, branch_top,sel2_top, Control_top, instruction_top, Rd1_top, Rd2_top, address_top, PCin_top,less, less_or_equal);
 
     input clk, reset;
     output [31:0] instruction_top, Rd1_top, Rd2_top, address_top, PCin_top;
+    output  branch_top, sel2_top, less, less_or_equal;
     output [3:0] Control_top;
+    output [2:0] func3;
 
     wire [1:0] ALUOp_top;
     wire [31:0] PC_top, ImmExt_top, Sum_out_top, NextoPC_top, mux1_top, Memdata_top, WriteBack_top;
-    wire RegWrite_top, zero_top, ALUSrc_top, branch_top, sel2_top, MemtoReg_top, MemWrite_top, MemRead_top;
+    wire RegWrite_top, ALUSrc_top, MemtoReg_top,zero_top, MemWrite_top, MemRead_top;
 
     // Program Counter
     PC PC(.clk(clk), .reset(reset), .PC_in(PCin_top), .PC_out(PC_top));
@@ -30,18 +32,18 @@ module main(clk, reset, instruction_top, Rd1_top, Rd2_top, address_top, PCin_top
     ALU_Control ALU_Control(.ALUOp(ALUOp_top), .fun7(instruction_top[30]), .fun3(instruction_top[14:12]), .Control_out(Control_top));
 
     // ALU unit
-    ALU_unit ALU_unit(.A(Rd1_top), .B(mux1_top), .Control_in(Control_top), .ALU_Result(address_top), .zero(zero_top));
+    ALU_unit ALU_unit(.A(Rd1_top), .B(mux1_top), .Control_in(Control_top), .ALU_Result(address_top), .zero(zero_top), .less(less), .less_or_equal(less_or_equal));
 
     // ALU Mux
     Mux1 ALU_mux(.sel1(ALUSrc_top), .A1(Rd2_top), .B1(ImmExt_top), .Mux1_out(mux1_top));
 
-    // Adder
-    Adder Adder(.in_1(PC_top), .in_2(ImmExt_top), .Sum_out(Sum_out_top));
+    // Adder for branching
+    Adder Adder_Branch(.in_1(PC_top), .in_2(ImmExt_top), .Sum_out(Sum_out_top));
 
-    // And Logic
-    AND_logic AND_logic(.branch(branch_top), .zero(zero_top), .and_out(sel2_top));
+    // And Logic for branching
+    AND_logic AND_logic(.branch(branch_top), .branch_type(instruction_top[14:12]), .less(less), .less_or_equal(less_or_equal), .zero(zero_top), .branch_enable(sel2_top));
 
-    // Adder mux
+    // Adder mux branching
     Mux2 Adder_mux(.sel2(sel2_top), .A2(NextoPC_top), .B2(Sum_out_top), .Mux2_out(PCin_top));
 
     // Data Memory (commented out if not needed)
@@ -50,4 +52,5 @@ module main(clk, reset, instruction_top, Rd1_top, Rd2_top, address_top, PCin_top
     // Mux for Memory
     Mux3 Memory_mux(.sel3(MemtoReg_top), .A3(address_top), .B3(Memdata_top), .Mux3_out(WriteBack_top));
 
+    assign func3 = instruction_top[14:12];
 endmodule

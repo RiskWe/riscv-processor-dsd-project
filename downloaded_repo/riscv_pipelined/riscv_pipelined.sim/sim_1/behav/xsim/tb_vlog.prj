@@ -1,0 +1,27 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/ALU.v" \
+"../../../../../../RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/ALU_Decoder.v" \
+"../../../../../../RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Control_Unit_Top.v" \
+"../../../../../../RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Data_Memory.v" \
+"../../../../../../RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Decode_Cyle.v" \
+"../../../../../../RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Execute_Cycle.v" \
+"../../../../../../RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Fetch_Cycle.v" \
+"../../../../../../RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Hazard_unit.v" \
+"../../../../../../RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Instruction_Memory.v" \
+"../../../../../../RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Main_Decoder.v" \
+"../../../../../../RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Memory_Cycle.v" \
+"../../../../../../RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Mux.v" \
+"../../../../../../RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/PC.v" \
+"../../../../../../RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/PC_Adder.v" \
+"../../../../../../RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Pipeline_Top.v" \
+"../../../../../../RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Register_File.v" \
+"../../../../../../RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Sign_Extend.v" \
+"../../../../../../RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Writeback_Cycle.v" \
+"../../../../../../RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/pipeline_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

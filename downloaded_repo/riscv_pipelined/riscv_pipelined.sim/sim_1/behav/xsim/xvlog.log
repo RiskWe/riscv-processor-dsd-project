@@ -1,0 +1,77 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/ALU_Decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Control_Unit_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Decoder
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'ALU_Decoder' [E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/ALU_Decoder.v:2]
+INFO: [VRFC 10-311] analyzing module Main_Decoder
+INFO: [VRFC 10-311] analyzing module Control_Unit_Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Data_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Decode_Cyle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode_cycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Execute_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module execute_cycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Fetch_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fetch_cycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Hazard_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hazard_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Main_Decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Decoder
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'Main_Decoder' [E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Main_Decoder.v:2]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Memory_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_cycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux
+INFO: [VRFC 10-311] analyzing module Mux_3_by_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_Module
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/PC_Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Pipeline_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fetch_cycle
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'fetch_cycle' [E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Fetch_Cycle.v:2]
+INFO: [VRFC 10-311] analyzing module decode_cycle
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'decode_cycle' [E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Decode_Cyle.v:2]
+INFO: [VRFC 10-311] analyzing module execute_cycle
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'execute_cycle' [E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Execute_Cycle.v:2]
+INFO: [VRFC 10-311] analyzing module memory_cycle
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'memory_cycle' [E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Memory_Cycle.v:2]
+INFO: [VRFC 10-311] analyzing module writeback_cycle
+INFO: [VRFC 10-311] analyzing module PC_Module
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'PC_Module' [E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/PC.v:2]
+INFO: [VRFC 10-311] analyzing module PC_Adder
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'PC_Adder' [E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/PC_Adder.v:2]
+INFO: [VRFC 10-311] analyzing module Mux
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'Mux' [E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Mux.v:2]
+INFO: [VRFC 10-311] analyzing module Mux_3_by_1
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'Mux_3_by_1' [E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Mux.v:12]
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'Instruction_Memory' [E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Instruction_Memory.v:2]
+INFO: [VRFC 10-311] analyzing module ALU_Decoder
+INFO: [VRFC 10-311] analyzing module Main_Decoder
+INFO: [VRFC 10-311] analyzing module Control_Unit_Top
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'Control_Unit_Top' [E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Control_Unit_Top.v:5]
+INFO: [VRFC 10-311] analyzing module Register_File
+INFO: [VRFC 10-311] analyzing module Sign_Extend
+INFO: [VRFC 10-311] analyzing module ALU
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'ALU' [E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/ALU.v:1]
+INFO: [VRFC 10-311] analyzing module Data_Memory
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'Data_Memory' [E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Data_Memory.v:2]
+INFO: [VRFC 10-311] analyzing module hazard_unit
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'hazard_unit' [E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Hazard_unit.v:2]
+INFO: [VRFC 10-311] analyzing module Pipeline_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Register_File.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register_File
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'Register_File' [E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Register_File.v:2]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Sign_Extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sign_Extend
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'Sign_Extend' [E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Sign_Extend.v:1]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Writeback_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module writeback_cycle
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'writeback_cycle' [E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Writeback_Cycle.v:2]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/pipeline_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb

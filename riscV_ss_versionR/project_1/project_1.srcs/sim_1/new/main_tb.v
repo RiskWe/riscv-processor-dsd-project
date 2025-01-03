@@ -11,7 +11,9 @@ module main_tb;
     wire [31:0] Rd1_top;           // Register 1 data output
     wire [31:0] Rd2_top;           // Register 2 data output
     wire [31:0] address_top;       // ALU result output
-    wire [3:0] Control_top;        // Control signal output
+    wire [3:0] Control_top;
+    wire [2:0] func3;
+    wire sel2_top,less, less_or_equal;        // Control signal output
 
     // Instantiate the main module
     main uut (
@@ -22,7 +24,12 @@ module main_tb;
         .Rd1_top(Rd1_top),
         .Rd2_top(Rd2_top),
         .address_top(address_top),
-        .Control_top(Control_top)
+        .sel2_top(sel2_top),
+        .Control_top(Control_top),
+        .branch_top(branch_top),
+        .less(less),
+        .less_or_equal(less_or_equal),
+        .func3(func3)
     );
 
     // Clock generation: toggles every 5 ns
@@ -38,12 +45,8 @@ module main_tb;
         #9 reset = 0;     // Deassert reset at timestamp 12 ns
 
         // Simulation time limit (e.g., 100 clock cycles)
-        #500 $finish;
+        #10000 $finish;
     end
 
     // Monitor outputs continuously
-    initial begin
-        $monitor("Time = %0t | Instruction = %h | Rd1 = %d | Rd2 = %d | ALU Result (address_top) = %d | Control Signal = %b", 
-                 $time, instruction_top, Rd1_top, Rd2_top, address_top, Control_top);
-    end
 endmodule

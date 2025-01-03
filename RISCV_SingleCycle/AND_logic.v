@@ -18,10 +18,18 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module AND_logic(branch, zero, and_out);
+module AND_logic(branch, branch_type, zero, branch_enable, less, less_or_equal);
 
-input branch, zero;
-output and_out;
+input branch, zero, less, less_or_equal;
+input [2:0] branch_type;
+output branch_enable;
 
-assign and_out = branch & zero;
+assign branch_enable = 
+    (branch && (branch_type == 3'b000) && zero) ||        // BEQ: Branch if equal
+    //(branch && branch_type == 3'b001 && !zero) ||       // BNE: Branch if not equal
+    (branch && (branch_type == 3'b100) && less) ||       // BLT: Branch if less than
+    (branch && branch_type == 3'b101 && !less_or_equal)       // BGE: Branch if greater or equal
+    //(branch && branch_type == 3'b100 && less_unsigned) || // BLTU: Unsigned less
+    //(branch && branch_type == 3'b101 && !less_unsigned);  // BGEU: Unsigned greater or equal
+;
 endmodule
