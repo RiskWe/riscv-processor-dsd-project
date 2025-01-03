@@ -18,7 +18,7 @@
 		end
 endmodule*/
 
-module clock(
+/*module clock(
     input original_clk,
     output reg clk
 );
@@ -37,4 +37,27 @@ module clock(
             counter <= 4'd0;       // Reset counter
         end
     end
+endmodule*/
+
+module clock #(parameter DIV_FACTOR = 100_000_000) (
+    input original_clk,  // Input clock (e.g., 100 MHz)
+    output reg clk       // Output clock
+);
+
+    localparam HALF_DIV = DIV_FACTOR / 2;  // Half the division factor
+    reg [$clog2(DIV_FACTOR)-1:0] counter; // Counter width based on DIV_FACTOR
+
+    initial begin
+        clk = 1'b0;
+        counter = 0;
+    end
+
+    always @(posedge original_clk) begin
+        counter <= counter + 1;
+        if (counter == (HALF_DIV - 1)) begin
+            clk <= ~clk;  // Toggle clk
+            counter <= 0; // Reset counter
+        end
+    end
 endmodule
+

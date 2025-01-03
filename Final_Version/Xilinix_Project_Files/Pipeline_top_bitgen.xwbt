@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\Xilinix_Project_Files\Pipeline_top.ncd
+OUTFILE=E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\Xilinix_Project_Files\Pipeline_top.bit
+FAMILY=Spartan6
+PART=xc6slx45-2csg324
+WORKINGDIR=E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\Xilinix_Project_Files
+LICENSE=WebPack
+USER_INFO=213141758_0_0_073

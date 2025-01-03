@@ -8,9 +8,10 @@ This is a Lite version of ISim.
 Time resolution is 1 ps
 # onerror resume
 # wave add /
-# run 1000 ns
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
+# run 5,000,000
+Incorrect usage of command 'run'
+Usage: run [ all | continue | <<time> [<unit>]> ]
+for detailed help use 'help run'
 # restart
 # run all
 Simulator is doing circuit initialization process.
