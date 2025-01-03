@@ -8,43 +8,43 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/ruchi/riscv-processor-dsd-project/RISCV_SingleCycle/ALU_Control.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Study_Material/My_Github_VisualCode/riscv-processor-dsd-project/RISCV_SingleCycle/ALU_Control.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/ruchi/riscv-processor-dsd-project/RISCV_SingleCycle/ALU_unit.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Study_Material/My_Github_VisualCode/riscv-processor-dsd-project/RISCV_SingleCycle/ALU_unit.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/ruchi/riscv-processor-dsd-project/RISCV_SingleCycle/AND_logic.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Study_Material/My_Github_VisualCode/riscv-processor-dsd-project/RISCV_SingleCycle/AND_logic.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/ruchi/riscv-processor-dsd-project/RISCV_SingleCycle/Adder.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Study_Material/My_Github_VisualCode/riscv-processor-dsd-project/RISCV_SingleCycle/Adder.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/ruchi/riscv-processor-dsd-project/RISCV_SingleCycle/Control_Unit.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Study_Material/My_Github_VisualCode/riscv-processor-dsd-project/RISCV_SingleCycle/Control_Unit.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/ruchi/riscv-processor-dsd-project/RISCV_SingleCycle/Data_memory.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Study_Material/My_Github_VisualCode/riscv-processor-dsd-project/RISCV_SingleCycle/Data_memory.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/ruchi/riscv-processor-dsd-project/RISCV_SingleCycle/ImmGen.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Study_Material/My_Github_VisualCode/riscv-processor-dsd-project/RISCV_SingleCycle/ImmGen.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/ruchi/riscv-processor-dsd-project/RISCV_SingleCycle/Instruction_Mem.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Study_Material/My_Github_VisualCode/riscv-processor-dsd-project/RISCV_SingleCycle/Instruction_Mem.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/ruchi/riscv-processor-dsd-project/RISCV_SingleCycle/Mux.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Study_Material/My_Github_VisualCode/riscv-processor-dsd-project/RISCV_SingleCycle/Mux.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/ruchi/riscv-processor-dsd-project/RISCV_SingleCycle/PC.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Study_Material/My_Github_VisualCode/riscv-processor-dsd-project/RISCV_SingleCycle/PC.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/ruchi/riscv-processor-dsd-project/RISCV_SingleCycle/PCplus4.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Study_Material/My_Github_VisualCode/riscv-processor-dsd-project/RISCV_SingleCycle/PCplus4.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/ruchi/riscv-processor-dsd-project/RISCV_SingleCycle/REg_File.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Study_Material/My_Github_VisualCode/riscv-processor-dsd-project/RISCV_SingleCycle/REg_File.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/ruchi/riscv-processor-dsd-project/RISCV_SingleCycle/main.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Study_Material/My_Github_VisualCode/riscv-processor-dsd-project/RISCV_SingleCycle/main.v&quot; into library work</arg>
 </msg>
 
 </messages>

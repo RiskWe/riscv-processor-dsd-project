@@ -1,0 +1,3 @@
+verilog isim_temp "C:/Users/ruchi/Downloads/fp_div.v"
+verilog isim_temp "C:/Users/ruchi/Downloads/fp_div_tb.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

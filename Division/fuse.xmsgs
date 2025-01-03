@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="HDLCompiler" num="281" delta="unknown" >"C:/Users/ruchi/Downloads/fp_div.v" Line 25: Cannot open include file &quot;<arg fmt="%s" index="1">ieee-754-flags.vh</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/ruchi/Downloads/fp_div.v" Line 27: &lt;<arg fmt="%s" index="1">NRAS</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/ruchi/Downloads/fp_div.v" Line 29: &lt;<arg fmt="%s" index="1">NTYPES</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/ruchi/Downloads/fp_div.v" Line 30: &lt;<arg fmt="%s" index="1">NTYPES</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/ruchi/Downloads/fp_div.v" Line 31: &lt;<arg fmt="%s" index="1">NEXCEPTIONS</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/ruchi/Downloads/fp_div.v" Line 32: &lt;<arg fmt="%s" index="1">NEXCEPTIONS</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/ruchi/Downloads/fp_div.v" Line 46: &lt;<arg fmt="%s" index="1">NTYPES</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/ruchi/Downloads/fp_div.v" Line 69: &lt;<arg fmt="%s" index="1">SNAN</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/ruchi/Downloads/fp_div.v" Line 71: &lt;<arg fmt="%s" index="1">SNAN</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/ruchi/Downloads/fp_div.v" Line 73: &lt;<arg fmt="%s" index="1">QNAN</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/ruchi/Downloads/fp_div.v" Line 75: &lt;<arg fmt="%s" index="1">QNAN</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/ruchi/Downloads/fp_div.v" Line 77: &lt;<arg fmt="%s" index="1">INFINITY</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/ruchi/Downloads/fp_div.v" Line 79: &lt;<arg fmt="%s" index="1">QNAN</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/ruchi/Downloads/fp_div.v" Line 81: &lt;<arg fmt="%s" index="1">INVALID</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/ruchi/Downloads/fp_div.v" Line 83: &lt;<arg fmt="%s" index="1">INFINITY</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/ruchi/Downloads/fp_div.v" Line 85: &lt;<arg fmt="%s" index="1">roundTowardZero</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/ruchi/Downloads/fp_div.v" Line 86: &lt;<arg fmt="%s" index="1">roundTowardNegative</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/ruchi/Downloads/fp_div.v" Line 87: &lt;<arg fmt="%s" index="1">roundTowardPositive</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/ruchi/Downloads/fp_div.v" Line 89: &lt;<arg fmt="%s" index="1">INFINITY</arg>&gt; is not declared.
+</msg>
+
+</messages>
+
