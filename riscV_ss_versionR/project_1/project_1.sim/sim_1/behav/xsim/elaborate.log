@@ -7,12 +7,21 @@ Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISCV_SingleCycle/Instruction_Mem.v" Line 1. Module Instruction_Mem doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "E:/UoM/Sem05/DSD/Project/Project-repo/riscv-processor-dsd-project/RISCV_SingleCycle/Instruction_Mem.v" Line 1. Module Instruction_Mem doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCplus4
 Compiling module xil_defaultlib.Instruction_Mem
+Compiling module xil_defaultlib.Reg_File
+Compiling module xil_defaultlib.ImmGen
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.ALU_Control
+Compiling module xil_defaultlib.ALU_unit
+Compiling module xil_defaultlib.Mux1
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.AND_logic
+Compiling module xil_defaultlib.Mux2
+Compiling module xil_defaultlib.Mux3
 Compiling module xil_defaultlib.main
 Compiling module xil_defaultlib.main_tb
 Compiling module xil_defaultlib.glbl
