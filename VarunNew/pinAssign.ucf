@@ -1,0 +1,6 @@
+net "rst" loc=p4;
+net "original_clk" loc=L15;
+
+net "led" loc=u18;
+
+ 

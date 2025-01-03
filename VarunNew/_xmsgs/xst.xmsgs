@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\Users\ruchi\Documents\GitHub\riscv-processor-dsd-project\VarunNew\clock.v" Line 34: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1670" delta="old" >"C:\Users\ruchi\Downloads\RISC-V-32I-5-stage-Pipeline-Core-main\RISC-V-32I-5-stage-Pipeline-Core-main\src\/Instruction_Memory.v" Line 13: Signal &lt;<arg fmt="%s" index="1">mem</arg>&gt; in initial block is partially initialized.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\ruchi\Downloads\RISC-V-32I-5-stage-Pipeline-Core-main\RISC-V-32I-5-stage-Pipeline-Core-main\src\Pipeline_Top.v</arg>&quot; line <arg fmt="%d" index="2">47</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">Fetch</arg>&gt; of block &lt;<arg fmt="%s" index="4">fetch_cycle</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">Pipeline_top</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\ruchi\Downloads\RISC-V-32I-5-stage-Pipeline-Core-main\RISC-V-32I-5-stage-Pipeline-Core-main\src\Pipeline_Top.v</arg>&quot; line <arg fmt="%d" index="2">58</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">Decode</arg>&gt; of block &lt;<arg fmt="%s" index="4">decode_cycle</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">Pipeline_top</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\ruchi\Downloads\RISC-V-32I-5-stage-Pipeline-Core-main\RISC-V-32I-5-stage-Pipeline-Core-main\src\Pipeline_Top.v</arg>&quot; line <arg fmt="%d" index="2">84</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">Execute</arg>&gt; of block &lt;<arg fmt="%s" index="4">execute_cycle</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">Pipeline_top</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\ruchi\Downloads\RISC-V-32I-5-stage-Pipeline-Core-main\RISC-V-32I-5-stage-Pipeline-Core-main\src\Pipeline_Top.v</arg>&quot; line <arg fmt="%d" index="2">114</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">Memory</arg>&gt; of block &lt;<arg fmt="%s" index="4">memory_cycle</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">Pipeline_top</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\ruchi\Downloads\RISC-V-32I-5-stage-Pipeline-Core-main\RISC-V-32I-5-stage-Pipeline-Core-main\src\Pipeline_Top.v</arg>&quot; line <arg fmt="%d" index="2">133</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">WriteBack</arg>&gt; of block &lt;<arg fmt="%s" index="4">writeback_cycle</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">Pipeline_top</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\ruchi\Downloads\RISC-V-32I-5-stage-Pipeline-Core-main\RISC-V-32I-5-stage-Pipeline-Core-main\src\Pipeline_Top.v</arg>&quot; line <arg fmt="%d" index="2">144</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">Forwarding_block</arg>&gt; of block &lt;<arg fmt="%s" index="4">hazard_unit</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">Pipeline_top</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">A&lt;1:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">A&lt;31:12&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="2999" delta="old" >Signal &apos;<arg fmt="%s" index="1">mem</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">Instruction_Memory</arg>&apos;, is tied to its initial value.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">funct7&lt;4:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">funct7&lt;6:6&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">op&lt;4:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">op&lt;6:6&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">In&lt;6:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">In&lt;19:12&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">A&lt;31:10&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">clock_inst/counter_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Pipeline_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+</messages>
+
