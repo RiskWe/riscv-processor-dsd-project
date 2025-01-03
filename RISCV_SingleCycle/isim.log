@@ -1,5 +1,5 @@
 ISim log file
-Running: C:\Users\ruchi\riscv-processor-dsd-project\RISCV_SingleCycle\PC_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/ruchi/riscv-processor-dsd-project/RISCV_SingleCycle/PC_tb_isim_beh.wdb 
+Running: E:\Study_Material\My_Github_VisualCode\riscv-processor-dsd-project\RISCV_SingleCycle\main_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb E:/Study_Material/My_Github_VisualCode/riscv-processor-dsd-project/RISCV_SingleCycle/main_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -10,19 +10,4 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
-Else block executed at time 0
-Else block executed at time          0
 Finished circuit initialization process.
-Else block executed at time 10000
-Else block executed at time          0
-Else block executed at time 30000
-Else block executed at time          x
-Else block executed at time 50000
-Else block executed at time          0
-Else block executed at time 70000
-Else block executed at time          4
-Else block executed at time 90000
-Else block executed at time          8
-Else block executed at time 110000
-Else block executed at time         12
-Stopped at time : 120 ns :  in File "C:/Users/ruchi/riscv-processor-dsd-project/RISCV_SingleCycle/test_bench.v" Line 49 

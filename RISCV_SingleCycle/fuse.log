@@ -1,21 +1,21 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/ruchi/riscv-processor-dsd-project/RISCV_SingleCycle/PC_tb_isim_beh.exe -prj C:/Users/ruchi/riscv-processor-dsd-project/RISCV_SingleCycle/PC_tb_beh.prj work.PC_tb work.glbl 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o E:/Study_Material/My_Github_VisualCode/riscv-processor-dsd-project/RISCV_SingleCycle/main_isim_beh.exe -prj E:/Study_Material/My_Github_VisualCode/riscv-processor-dsd-project/RISCV_SingleCycle/main_beh.prj work.main work.glbl 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 12
 Turning on mult-threading, number of parallel sub-compilation jobs: 24 
 Determining compilation order of HDL files
-Analyzing Verilog file "C:/Users/ruchi/riscv-processor-dsd-project/RISCV_SingleCycle/PC.v" into library work
-Analyzing Verilog file "C:/Users/ruchi/riscv-processor-dsd-project/RISCV_SingleCycle/main.v" into library work
-Analyzing Verilog file "C:/Users/ruchi/riscv-processor-dsd-project/RISCV_SingleCycle/test_bench.v" into library work
+Analyzing Verilog file "E:/Study_Material/My_Github_VisualCode/riscv-processor-dsd-project/RISCV_SingleCycle/PC.v" into library work
+Analyzing Verilog file "E:/Study_Material/My_Github_VisualCode/riscv-processor-dsd-project/RISCV_SingleCycle/Instruction_Mem.v" into library work
+Analyzing Verilog file "E:/Study_Material/My_Github_VisualCode/riscv-processor-dsd-project/RISCV_SingleCycle/main.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling module PC
+Compiling module Instruction_Mem
 Compiling module main
-Compiling module PC_tb
 Compiling module glbl
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
 Compiled 4 Verilog Units
-Built simulation executable C:/Users/ruchi/riscv-processor-dsd-project/RISCV_SingleCycle/PC_tb_isim_beh.exe
-Fuse Memory Usage: 28176 KB
-Fuse CPU Usage: 234 ms
+Built simulation executable E:/Study_Material/My_Github_VisualCode/riscv-processor-dsd-project/RISCV_SingleCycle/main_isim_beh.exe
+Fuse Memory Usage: 28192 KB
+Fuse CPU Usage: 359 ms
