@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\ruchi\Documents\GitHub\riscv-processor-dsd-project\VarunNew\Pipeline_top.ncd
-OUTFILE=C:\Users\ruchi\Documents\GitHub\riscv-processor-dsd-project\VarunNew\Pipeline_top.bit
-FAMILY=Spartan6
-PART=xc6slx45-2csg324
-WORKINGDIR=C:\Users\ruchi\Documents\GitHub\riscv-processor-dsd-project\VarunNew
-LICENSE=WebPack
-USER_INFO=213141758_0_0_073
