@@ -98,25 +98,7 @@
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="../../../../Downloads/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/ALU.v"/>
-      <outfile xil_pn:name="../../../../Downloads/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/ALU_Decoder.v"/>
-      <outfile xil_pn:name="../../../../Downloads/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Control_Unit_Top.v"/>
-      <outfile xil_pn:name="../../../../Downloads/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Data_Memory.v"/>
-      <outfile xil_pn:name="../../../../Downloads/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Decode_Cyle.v"/>
-      <outfile xil_pn:name="../../../../Downloads/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Execute_Cycle.v"/>
-      <outfile xil_pn:name="../../../../Downloads/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Fetch_Cycle.v"/>
-      <outfile xil_pn:name="../../../../Downloads/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Hazard_unit.v"/>
-      <outfile xil_pn:name="../../../../Downloads/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Instruction_Memory.v"/>
-      <outfile xil_pn:name="../../../../Downloads/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Main_Decoder.v"/>
-      <outfile xil_pn:name="../../../../Downloads/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Memory_Cycle.v"/>
-      <outfile xil_pn:name="../../../../Downloads/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Mux.v"/>
-      <outfile xil_pn:name="../../../../Downloads/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/PC.v"/>
-      <outfile xil_pn:name="../../../../Downloads/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/PC_Adder.v"/>
-      <outfile xil_pn:name="../../../../Downloads/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Pipeline_Top.v"/>
-      <outfile xil_pn:name="../../../../Downloads/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Register_File.v"/>
-      <outfile xil_pn:name="../../../../Downloads/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Sign_Extend.v"/>
-      <outfile xil_pn:name="../../../../Downloads/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Writeback_Cycle.v"/>
-      <outfile xil_pn:name="../../../../Downloads/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/pipeline_tb.v"/>
+      <outfile xil_pn:name="../VarunNew"/>
       <outfile xil_pn:name="clock.v"/>
     </transform>
     <transform xil_pn:end_ts="1735905166" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-7128511773193751507" xil_pn:start_ts="1735905166">
@@ -139,25 +121,7 @@
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="../../../../Downloads/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/ALU.v"/>
-      <outfile xil_pn:name="../../../../Downloads/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/ALU_Decoder.v"/>
-      <outfile xil_pn:name="../../../../Downloads/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Control_Unit_Top.v"/>
-      <outfile xil_pn:name="../../../../Downloads/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Data_Memory.v"/>
-      <outfile xil_pn:name="../../../../Downloads/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Decode_Cyle.v"/>
-      <outfile xil_pn:name="../../../../Downloads/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Execute_Cycle.v"/>
-      <outfile xil_pn:name="../../../../Downloads/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Fetch_Cycle.v"/>
-      <outfile xil_pn:name="../../../../Downloads/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Hazard_unit.v"/>
-      <outfile xil_pn:name="../../../../Downloads/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Instruction_Memory.v"/>
-      <outfile xil_pn:name="../../../../Downloads/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Main_Decoder.v"/>
-      <outfile xil_pn:name="../../../../Downloads/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Memory_Cycle.v"/>
-      <outfile xil_pn:name="../../../../Downloads/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Mux.v"/>
-      <outfile xil_pn:name="../../../../Downloads/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/PC.v"/>
-      <outfile xil_pn:name="../../../../Downloads/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/PC_Adder.v"/>
-      <outfile xil_pn:name="../../../../Downloads/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Pipeline_Top.v"/>
-      <outfile xil_pn:name="../../../../Downloads/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Register_File.v"/>
-      <outfile xil_pn:name="../../../../Downloads/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Sign_Extend.v"/>
-      <outfile xil_pn:name="../../../../Downloads/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/Writeback_Cycle.v"/>
-      <outfile xil_pn:name="../../../../Downloads/RISC-V-32I-5-stage-Pipeline-Core-main/RISC-V-32I-5-stage-Pipeline-Core-main/src/pipeline_tb.v"/>
+      <outfile xil_pn:name="../VarunNew"/>
       <outfile xil_pn:name="clock.v"/>
     </transform>
     <transform xil_pn:end_ts="1735907984" xil_pn:in_ck="8672621016752381505" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6159587342810039271" xil_pn:start_ts="1735907982">
@@ -219,7 +183,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Pipeline_top.lso"/>
       <outfile xil_pn:name="Pipeline_top.ngc"/>
@@ -241,6 +208,8 @@
     <transform xil_pn:end_ts="1735909008" xil_pn:in_ck="5177811271824165542" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="2526642120999222862" xil_pn:start_ts="1735909004">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Pipeline_top.bld"/>
       <outfile xil_pn:name="Pipeline_top.ngd"/>
       <outfile xil_pn:name="Pipeline_top_ngdbuild.xrpt"/>
@@ -250,6 +219,7 @@
     <transform xil_pn:end_ts="1735909016" xil_pn:in_ck="4877933044144014407" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-398923363910175968" xil_pn:start_ts="1735909008">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Pipeline_top.pcf"/>
       <outfile xil_pn:name="Pipeline_top_map.map"/>
       <outfile xil_pn:name="Pipeline_top_map.mrp"/>
@@ -264,6 +234,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Pipeline_top.ncd"/>
       <outfile xil_pn:name="Pipeline_top.pad"/>
       <outfile xil_pn:name="Pipeline_top.par"/>
@@ -278,6 +249,7 @@
     <transform xil_pn:end_ts="1735909037" xil_pn:in_ck="505907898608023211" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1735909028">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Pipeline_top.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="pipeline_top.bgn"/>
@@ -291,11 +263,13 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputChanged"/>
     </transform>
     <transform xil_pn:end_ts="1735909027" xil_pn:in_ck="7568370950504860995" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1735909023">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Pipeline_top.twr"/>
       <outfile xil_pn:name="Pipeline_top.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
