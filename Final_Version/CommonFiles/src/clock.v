@@ -11,23 +11,18 @@ module clock #(parameter DIV_FACTOR = 100) (
         clk = 1'b0;
         counter = 0;
     end
-	
-/*	 always @(negedge original_clk) begin
-		 if(tb==1) begin
-			clk <= original_clk;
-		 end
-	 end*/
- 
+
     always @(posedge original_clk) begin
-    if (tb == 1) begin
-        clk <= original_clk;  // Bypass mode: clk directly follows original_clk
-    end else begin
-        counter <= counter + 1;
-        if (counter == (HALF_DIV - 1)) begin
-            clk <= ~clk;       // Toggle clk
-            counter <= 0;      // Reset counter
+        if (tb == 1) begin
+            // Bypass mode: clk directly follows original_clk
+            clk <= original_clk;
+            counter <= 0;  // Reset counter to ensure clean transition to normal mode
+        end else begin
+            counter <= counter + 1;
+            if (counter == (HALF_DIV - 1)) begin
+                clk <= ~clk;  // Toggle clk
+                counter <= 0;  // Reset counter
+            end
         end
     end
-end
-
 endmodule
