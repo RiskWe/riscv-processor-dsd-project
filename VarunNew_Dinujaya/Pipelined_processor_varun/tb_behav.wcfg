@@ -12,14 +12,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="2,590.001 ns"></ZoomEndTime>
-      <Cursor1Time time="100.000 ns"></Cursor1Time>
+      <ZoomEndTime time="819.738 ns"></ZoomEndTime>
+      <Cursor1Time time="592.838 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="209"></NameColumnWidth>
-      <ValueColumnWidth column_width="101"></ValueColumnWidth>
+      <NameColumnWidth column_width="208"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="11" />
+   <WVObjectSize size="16" />
    <wvobject fp_name="/tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -45,9 +45,9 @@
       <obj_property name="ElementShortName">PC[31:0]</obj_property>
       <obj_property name="ObjectShortName">PC[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/dut/Fetch/IMEM/rst" type="logic">
-      <obj_property name="ElementShortName">rst</obj_property>
-      <obj_property name="ObjectShortName">rst</obj_property>
+   <wvobject fp_name="/tb/dut/Decode/extension/Imm_Ext" type="array">
+      <obj_property name="ElementShortName">Imm_Ext[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Imm_Ext[31:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/dut/Fetch/IMEM/A" type="array">
       <obj_property name="ElementShortName">A[31:0]</obj_property>
@@ -57,13 +57,33 @@
       <obj_property name="ElementShortName">RD[31:0]</obj_property>
       <obj_property name="ObjectShortName">RD[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/dut/Fetch/IMEM/mem" type="array">
+   <wvobject fp_name="/tb/dut/Fetch/InstrF_reg" type="array">
+      <obj_property name="ElementShortName">InstrF_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">InstrF_reg[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/Memory/dmem/mem" type="array">
       <obj_property name="ElementShortName">mem[1023:0][31:0]</obj_property>
       <obj_property name="ObjectShortName">mem[1023:0][31:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/dut/Decode/rf/Register" type="array">
       <obj_property name="ElementShortName">Register[31:0][31:0]</obj_property>
       <obj_property name="ObjectShortName">Register[31:0][31:0]</obj_property>
-      <obj_property name="isExpanded"></obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/Fetch/PC_MUX/a" type="array">
+      <obj_property name="ElementShortName">a[31:0]</obj_property>
+      <obj_property name="ObjectShortName">a[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/Fetch/PC_MUX/b" type="array">
+      <obj_property name="ElementShortName">b[31:0]</obj_property>
+      <obj_property name="ObjectShortName">b[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/Fetch/PC_MUX/s" type="logic">
+      <obj_property name="ElementShortName">s</obj_property>
+      <obj_property name="ObjectShortName">s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/Decode/control/Main_Decoder/Branch" type="logic">
+      <obj_property name="ElementShortName">Branch</obj_property>
+      <obj_property name="ObjectShortName">Branch</obj_property>
    </wvobject>
 </wave_config>

@@ -17,6 +17,8 @@ module Data_Memory(clk,rst,WE,WD,A,RD);
 
     initial begin
         mem[0] = 32'h00000000;
+        mem[8] = 32'h00000020;
+        mem[4] = 32'h00000021;
         //mem[40] = 32'h00000002;
     end
 
