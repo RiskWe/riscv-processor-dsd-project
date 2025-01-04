@@ -12,11 +12,11 @@ module clock #(parameter DIV_FACTOR = 10000000) (
         counter = 0;
     end
 	
-/*	 always @(negedge original_clk) begin
+	 always @(negedge original_clk) begin
 		 if(tb==1) begin
 			clk <= original_clk;
 		 end
-	 end*/
+	 end
  
     always @(posedge original_clk) begin
     if (tb == 1) begin

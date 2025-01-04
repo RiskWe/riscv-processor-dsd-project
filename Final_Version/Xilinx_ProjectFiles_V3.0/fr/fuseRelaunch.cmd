@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Xilinx_ProjectFiles_V3.0/fr/tb_isim_beh.exe" -prj "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Xilinx_ProjectFiles_V3.0/fr/tb_beh.prj" "work.tb" "work.glbl" 

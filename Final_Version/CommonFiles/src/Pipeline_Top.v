@@ -27,7 +27,7 @@ module Pipeline_top(original_clk, pre_rst, led, led_R6, ledfetch, leddecode, led
 	 output ledmemory;
 	 output ledwriteback;
 	 output [0:4] leds;
-
+	  		 																										
     // Declaration of Interim Wires
     wire PCSrcE, RegWriteW, RegWriteE, ALUSrcE, MemWriteE, ResultSrcE, BranchE, RegWriteM, MemWriteM, ResultSrcM, ResultSrcW;
     wire [2:0] ALUControlE;
@@ -40,7 +40,7 @@ module Pipeline_top(original_clk, pre_rst, led, led_R6, ledfetch, leddecode, led
     wire rst;
 	 
 	 wire test;
-	 assign test = 0;
+	 assign test = 1;
 	 assign rst = ~pre_rst;
 
 		// Clock module instantiation
