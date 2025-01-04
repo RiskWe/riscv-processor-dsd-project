@@ -3,7 +3,7 @@ module tb();
     reg original_clk=0, pre_rst;
     
     always begin
-        clk = ~clk;
+        original_clk = ~original_clk;
         #5;
     end
 

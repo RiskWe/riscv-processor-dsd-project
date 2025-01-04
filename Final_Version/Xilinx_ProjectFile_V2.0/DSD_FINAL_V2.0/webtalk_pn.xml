@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Sat Jan 04 18:48:07 2025">
+<application name="pn" timeStamp="Sat Jan 04 20:23:33 2025">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="C5B52208147B469ABB08609D14DEA2AE" type="project"/>
-<property name="ProjectIteration" value="21" type="project"/>
+<property name="ProjectIteration" value="22" type="project"/>
 <property name="ProjectFile" value="E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Xilinx_ProjectFile_V2.0/DSD_FINAL_V2.0/DSD_FINAL_V2.0.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2025-01-04T11:54:20" type="project"/>
 </section>
@@ -17,7 +17,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_LastAppliedStrategy" value="Xilinx Default (unlocked)" type="design"/>
 <property name="PROP_ManualCompileOrderImp" value="false" type="design"/>
 <property name="PROP_PropSpecInProjFile" value="Store all values" type="design"/>
-<property name="PROP_SelectedInstanceHierarchicalPath" value="/tb/dut/clock_inst" type="process"/>
+<property name="PROP_SelectedInstanceHierarchicalPath" value="/tb/dut" type="process"/>
 <property name="PROP_Simulator" value="ISim (VHDL/Verilog)" type="design"/>
 <property name="PROP_SynthTopFile" value="changed" type="process"/>
 <property name="PROP_Top_Level_Module_Type" value="HDL" type="design"/>
@@ -25,10 +25,10 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_UserConstraintEditorPreference" value="Text Editor" type="process"/>
 <property name="PROP_intProjectCreationTimestamp" value="2025-01-04T11:54:20" type="design"/>
 <property name="PROP_intWbtProjectID" value="C5B52208147B469ABB08609D14DEA2AE" type="design"/>
-<property name="PROP_intWbtProjectIteration" value="21" type="process"/>
+<property name="PROP_intWbtProjectIteration" value="22" type="process"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
-<property name="PROP_selectedSimRootSourceNode_behav" value="work.clock" type="process"/>
+<property name="PROP_selectedSimRootSourceNode_behav" value="work.Pipeline_top" type="process"/>
 <property name="PROP_xilxBitgStart_IntDone" value="true" type="process"/>
 <property name="PROP_AutoTop" value="true" type="design"/>
 <property name="PROP_DevFamily" value="Spartan6" type="design"/>

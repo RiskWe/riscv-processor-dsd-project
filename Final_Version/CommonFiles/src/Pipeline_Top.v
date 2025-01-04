@@ -40,7 +40,7 @@ module Pipeline_top(original_clk, pre_rst, led, led_R6, ledfetch, leddecode, led
     wire rst;
 	 
 	 wire test;
-	 assign test = 1;
+	 assign test = 0;
 	 assign rst = ~pre_rst;
 
 		// Clock module instantiation
