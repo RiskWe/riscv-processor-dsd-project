@@ -1,6 +1,6 @@
 
 module memory_cycle(clk, rst, RegWriteM, MemWriteM, ResultSrcM, RD_M, PCPlus4M, WriteDataM, 
-    ALU_ResultM, RegWriteW, ResultSrcW, RD_W, PCPlus4W, ALU_ResultW, ReadDataW);
+    ALU_ResultM, RegWriteW, ResultSrcW, RD_W, PCPlus4W, ALU_ResultW, ReadDataW,ledmemory);
     
     // Declaration of I/Os
     input clk, rst, RegWriteM, MemWriteM, ResultSrcM;
@@ -13,6 +13,9 @@ module memory_cycle(clk, rst, RegWriteM, MemWriteM, ResultSrcM, RD_M, PCPlus4M, 
 
     // Declaration of Interim Wires
     wire [31:0] ReadDataM;
+	 
+	 output ledmemory;
+	 assign ledmemory = 1;
 
     // Declaration of Interim Registers
     reg RegWriteM_r, ResultSrcM_r;

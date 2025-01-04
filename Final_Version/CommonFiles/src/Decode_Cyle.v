@@ -1,11 +1,16 @@
 
 module decode_cycle(clk, rst, InstrD, PCD, PCPlus4D, RegWriteW, RDW, ResultW, RegWriteE, ALUSrcE, MemWriteE, ResultSrcE,
-    BranchE,  ALUControlE, RD1_E, RD2_E, Imm_Ext_E, RD_E, PCE, PCPlus4E, RS1_E, RS2_E);
+    BranchE,  ALUControlE, RD1_E, RD2_E, Imm_Ext_E, RD_E, PCE, PCPlus4E, RS1_E, RS2_E, led_R6, leddecode);
 
     // Declaring I/O
     input clk, rst, RegWriteW;
     input [4:0] RDW;
     input [31:0] InstrD, PCD, PCPlus4D, ResultW;
+	 
+	 output wire led_R6;
+	 output wire leddecode;
+	 
+	 assign leddecode = 1;
 
     output RegWriteE,ALUSrcE,MemWriteE,ResultSrcE,BranchE;
     output [2:0] ALUControlE;
@@ -52,7 +57,8 @@ module decode_cycle(clk, rst, InstrD, PCD, PCPlus4D, RegWriteW, RDW, ResultW, Re
                         .A2(InstrD[24:20]),
                         .A3(RDW),
                         .RD1(RD1_D),
-                        .RD2(RD2_D)
+                        .RD2(RD2_D),
+								.led_R6(led_R6) //added
                         );
 
     // Sign Extension

@@ -1,5 +1,5 @@
 
-module fetch_cycle(clk, rst, PCSrcE, PCTargetE, InstrD, PCD, PCPlus4D);
+module fetch_cycle(clk, rst, PCSrcE, PCTargetE, InstrD, PCD, PCPlus4D, ledfetch, leds);
 
     // Declare input & outputs
     input clk, rst;
@@ -7,6 +7,8 @@ module fetch_cycle(clk, rst, PCSrcE, PCTargetE, InstrD, PCD, PCPlus4D);
     input [31:0] PCTargetE;
     output [31:0] InstrD;
     output [31:0] PCD, PCPlus4D;
+	 output ledfetch;
+	 output [4:0] leds;
 
     // Declaring interim wires
     wire [31:0] PC_F, PCF, PCPlus4F;
@@ -15,7 +17,8 @@ module fetch_cycle(clk, rst, PCSrcE, PCTargetE, InstrD, PCD, PCPlus4D);
     // Declaration of Register
     reg [31:0] InstrF_reg;
     reg [31:0] PCF_reg, PCPlus4F_reg;
-
+	
+	assign ledfetch = 1;
 
     // Initiation of Modules
     // Declare PC Mux
@@ -30,7 +33,8 @@ module fetch_cycle(clk, rst, PCSrcE, PCTargetE, InstrD, PCD, PCPlus4D);
                 .clk(clk),
                 .rst(rst),
                 .PC(PCF),
-                .PC_Next(PC_F)
+                .PC_Next(PC_F),
+					 .leds(leds)
                 );
 
     // Declare Instruction Memory
