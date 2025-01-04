@@ -1,0 +1,4 @@
+verilog work "../../Common Files V2.0/clock.v"
+verilog work "../../Common Files V2.0/Pipeline_Top.v"
+verilog work "../../Common Files V2.0/pipeline_tb.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
