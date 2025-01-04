@@ -4,7 +4,7 @@ module tb();
     
     always begin
         clk = ~clk;
-        #50;
+        #5;
     end
 
     initial begin
