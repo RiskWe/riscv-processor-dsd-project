@@ -3,8 +3,8 @@ module tb();
     reg original_clk=0, pre_rst;
     
     always begin
-        original_clk = ~original_clk;
-        #50;
+        clk = ~clk;
+        #5;
     end
 
     initial begin

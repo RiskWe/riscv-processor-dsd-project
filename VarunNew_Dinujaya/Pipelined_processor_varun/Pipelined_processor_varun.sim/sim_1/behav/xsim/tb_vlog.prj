@@ -1,0 +1,28 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../Final_Version/CommonFiles/src/ALU.v" \
+"../../../../../../Final_Version/CommonFiles/src/ALU_Decoder.v" \
+"../../../../../../Final_Version/CommonFiles/src/Control_Unit_Top.v" \
+"../../../../../../Final_Version/CommonFiles/src/Data_Memory.v" \
+"../../../../../../Final_Version/CommonFiles/src/Decode_Cyle.v" \
+"../../../../../../Final_Version/CommonFiles/src/Execute_Cycle.v" \
+"../../../../../../Final_Version/CommonFiles/src/Fetch_Cycle.v" \
+"../../../../../../Final_Version/CommonFiles/src/Hazard_unit.v" \
+"../../../../../../Final_Version/CommonFiles/src/Instruction_Memory.v" \
+"../../../../../../Final_Version/CommonFiles/src/Main_Decoder.v" \
+"../../../../../../Final_Version/CommonFiles/src/Memory_Cycle.v" \
+"../../../../../../Final_Version/CommonFiles/src/Mux.v" \
+"../../../../../../Final_Version/CommonFiles/src/PC.v" \
+"../../../../../../Final_Version/CommonFiles/src/PC_Adder.v" \
+"../../../../../../Final_Version/CommonFiles/src/Pipeline_Top.v" \
+"../../../../../../Final_Version/CommonFiles/src/Register_File.v" \
+"../../../../../../Final_Version/CommonFiles/src/Sign_Extend.v" \
+"../../../../../../Final_Version/CommonFiles/src/Writeback_Cycle.v" \
+"../../../../../../Final_Version/CommonFiles/src/clock.v" \
+"../../../../../../Final_Version/CommonFiles/src/pipeline_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
