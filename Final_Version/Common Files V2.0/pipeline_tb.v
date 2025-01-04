@@ -1,5 +1,4 @@
 module tb();
-
     reg original_clk=0, pre_rst;
     
     always begin
@@ -8,10 +7,10 @@ module tb();
     end
 
     initial begin
-        pre_rst <= 1'b0;
-        #200;
         pre_rst <= 1'b1;
-        #1000;
+        #200;
+        pre_rst <= 1'b0;
+        #10000;
         $finish;    
     end
 

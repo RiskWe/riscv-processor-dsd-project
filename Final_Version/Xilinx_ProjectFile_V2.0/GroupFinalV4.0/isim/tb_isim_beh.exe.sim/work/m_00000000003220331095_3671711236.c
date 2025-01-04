@@ -22,14 +22,14 @@
 #define alloca _alloca
 #endif
 static const char *ng0 = "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Common Files V2.0/pipeline_tb.v";
-static unsigned int ng1[] = {0U, 0U};
-static unsigned int ng2[] = {1U, 0U};
+static unsigned int ng1[] = {1U, 0U};
+static unsigned int ng2[] = {0U, 0U};
 static const char *ng3 = "dump.vcd";
 static int ng4[] = {0, 0};
 
 
 
-static void Always_5_0(char *t0)
+static void Always_4_0(char *t0)
 {
     char t3[8];
     char *t1;
@@ -62,9 +62,9 @@ LAB0:    t1 = (t0 + 2368U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(5, ng0);
+LAB2:    xsi_set_current_line(4, ng0);
 
-LAB4:    xsi_set_current_line(6, ng0);
+LAB4:    xsi_set_current_line(5, ng0);
     t2 = (t0 + 1288);
     t4 = (t2 + 56U);
     t5 = *((char **)t4);
@@ -100,7 +100,7 @@ LAB9:    t21 = *((unsigned int *)t3);
     *((unsigned int *)t13) = (t22 & 1U);
     t23 = (t0 + 1288);
     xsi_vlogvar_assign_value(t23, t3, 0, 0, 1);
-    xsi_set_current_line(7, ng0);
+    xsi_set_current_line(6, ng0);
     t2 = (t0 + 2176);
     xsi_process_wait(t2, 5000LL);
     *((char **)t1) = &&LAB11;
@@ -121,7 +121,7 @@ LAB11:    goto LAB2;
 
 }
 
-static void Initial_10_1(char *t0)
+static void Initial_9_1(char *t0)
 {
     char *t1;
     char *t2;
@@ -134,43 +134,43 @@ LAB0:    t1 = (t0 + 2616U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(10, ng0);
+LAB2:    xsi_set_current_line(9, ng0);
 
-LAB4:    xsi_set_current_line(11, ng0);
+LAB4:    xsi_set_current_line(10, ng0);
     t2 = ((char*)((ng1)));
     t3 = (t0 + 1448);
     xsi_vlogvar_wait_assign_value(t3, t2, 0, 0, 1, 0LL);
-    xsi_set_current_line(12, ng0);
+    xsi_set_current_line(11, ng0);
     t2 = (t0 + 2424);
     xsi_process_wait(t2, 200000LL);
     *((char **)t1) = &&LAB5;
 
 LAB1:    return;
-LAB5:    xsi_set_current_line(13, ng0);
+LAB5:    xsi_set_current_line(12, ng0);
     t2 = ((char*)((ng2)));
     t3 = (t0 + 1448);
     xsi_vlogvar_wait_assign_value(t3, t2, 0, 0, 1, 0LL);
-    xsi_set_current_line(14, ng0);
+    xsi_set_current_line(13, ng0);
     t2 = (t0 + 2424);
-    xsi_process_wait(t2, 1000000LL);
+    xsi_process_wait(t2, 10000000LL);
     *((char **)t1) = &&LAB6;
     goto LAB1;
 
-LAB6:    xsi_set_current_line(15, ng0);
+LAB6:    xsi_set_current_line(14, ng0);
     xsi_vlog_finish(1);
     goto LAB1;
 
 }
 
-static void Initial_18_2(char *t0)
+static void Initial_17_2(char *t0)
 {
     char *t1;
 
-LAB0:    xsi_set_current_line(18, ng0);
+LAB0:    xsi_set_current_line(17, ng0);
 
-LAB2:    xsi_set_current_line(19, ng0);
+LAB2:    xsi_set_current_line(18, ng0);
     xsi_vcd_dumpfile(ng3);
-    xsi_set_current_line(20, ng0);
+    xsi_set_current_line(19, ng0);
     t1 = ((char*)((ng4)));
     xsi_vcd_dumpvars_args(*((unsigned int *)t1), t0, (char)109, t0, (char)101);
 
@@ -180,7 +180,7 @@ LAB1:    return;
 
 extern void work_m_00000000003220331095_3671711236_init()
 {
-	static char *pe[] = {(void *)Always_5_0,(void *)Initial_10_1,(void *)Initial_18_2};
+	static char *pe[] = {(void *)Always_4_0,(void *)Initial_9_1,(void *)Initial_17_2};
 	xsi_register_didat("work_m_00000000003220331095_3671711236", "isim/tb_isim_beh.exe.sim/work/m_00000000003220331095_3671711236.didat");
 	xsi_register_executes(pe);
 }

@@ -88,13 +88,13 @@
          <ClosedNode>PROJECT</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>clock_inst - clock (E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/CommonFiles/src/clock.v)</SelectedItem>
+         <SelectedItem>tb (E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/CommonFiles/src/pipeline_tb.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000016a000000020000000000000000000000000200000064ffffffff0000008100000003000000020000016a0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>clock_inst - clock (E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/CommonFiles/src/clock.v)</CurrentItem>
+      <CurrentItem>tb (E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/CommonFiles/src/pipeline_tb.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>

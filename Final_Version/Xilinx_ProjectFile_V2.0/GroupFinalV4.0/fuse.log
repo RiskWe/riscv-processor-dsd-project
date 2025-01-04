@@ -8,7 +8,7 @@ Analyzing Verilog file "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project
 Analyzing Verilog file "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Xilinx_ProjectFile_V2.0/GroupFinalV4.0/../../Common Files V2.0/pipeline_tb.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
-WARNING:HDLCompiler:1016 - "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Xilinx_ProjectFile_V2.0/GroupFinalV4.0/../../Common Files V2.0/pipeline_tb.v" Line 23: Port led is not connected to this instance
+WARNING:HDLCompiler:1016 - "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Xilinx_ProjectFile_V2.0/GroupFinalV4.0/../../Common Files V2.0/pipeline_tb.v" Line 22: Port led is not connected to this instance
 Completed static elaboration
 Compiling module clock_default
 Compiling module Mux
@@ -33,8 +33,7 @@ Compiling module Pipeline_top
 Compiling module tb
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
 Compiled 22 Verilog Units
 Built simulation executable E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Xilinx_ProjectFile_V2.0/GroupFinalV4.0/tb_isim_beh.exe
-Fuse Memory Usage: 28892 KB
-Fuse CPU Usage: 390 ms
+Fuse Memory Usage: 28744 KB
+Fuse CPU Usage: 374 ms
