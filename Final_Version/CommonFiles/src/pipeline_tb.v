@@ -1,6 +1,6 @@
 module tb();
 
-    reg clk=0, rst;
+    reg original_clk=0, rst;
     
     always begin
         clk = ~clk;
@@ -11,14 +11,9 @@ module tb();
         rst <= 1'b0;
         #200;
         rst <= 1'b1;
-        #5000;
+        #6000;
         $finish;    
     end
 
-/*    initial begin
-        $dumpfile("dump.vcd");
-        $dumpvars(0);
-    end*/
-
-    Pipeline_top dut (.original_clk(clk), .rst(rst));
+    Pipeline_top dut (.original_clk(original_clk), .rst(rst));
 endmodule

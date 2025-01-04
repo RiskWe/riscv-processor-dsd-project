@@ -1,0 +1,2 @@
+verilog work "../CommonFiles/src/clock.v"
+verilog work "../CommonFiles/src/Pipeline_Top.v"

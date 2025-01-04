@@ -1,4 +1,3 @@
-
 `include "Fetch_Cycle.v"
 `include "Decode_Cyle.v"
 `include "Execute_Cycle.v"
@@ -14,14 +13,20 @@
 `include "ALU.v"
 `include "Data_Memory.v"
 `include "Hazard_unit.v"
-//`include "Clock_Manipulation.v"
 
 
-module Pipeline_top(original_clk, rst,led);
+module Pipeline_top(original_clk, pre_rst, led, led_R6, ledfetch, leddecode, ledexecute, ledmemory, ledwriteback, leds);
 
     // Declaration of I/O
-    input original_clk, rst;
+    input original_clk, pre_rst;
 	 output led;
+	 output led_R6;
+	 output ledfetch;
+	 output leddecode;
+	 output ledexecute;
+	 output ledmemory;
+	 output ledwriteback;
+	 output [0:4] leds;
 
     // Declaration of Interim Wires
     wire PCSrcE, RegWriteW, RegWriteE, ALUSrcE, MemWriteE, ResultSrcE, BranchE, RegWriteM, MemWriteM, ResultSrcM, ResultSrcW;
@@ -32,15 +37,21 @@ module Pipeline_top(original_clk, rst,led);
     wire [4:0] RS1_E, RS2_E;
     wire [1:0] ForwardBE, ForwardAE;
 	 wire clk;
-    
+    wire rst;
+	 
+	 wire test;
+	 assign test = 0;
+	 assign rst = ~pre_rst;
 
 		// Clock module instantiation
 		clock clock_inst (
+			 .tb(test),
 			 .original_clk(original_clk),
 			 .clk(clk)
 		);
 		
 	assign led = clk;
+	
 							
     // Module Initiation
     // Fetch Stage
@@ -51,7 +62,9 @@ module Pipeline_top(original_clk, rst,led);
                         .PCTargetE(PCTargetE), 
                         .InstrD(InstrD), 
                         .PCD(PCD), 
-                        .PCPlus4D(PCPlus4D)
+                        .PCPlus4D(PCPlus4D),
+								.ledfetch(ledfetch),
+								.leds(leds)
                     );
 
     // Decode Stage
@@ -77,7 +90,9 @@ module Pipeline_top(original_clk, rst,led);
                         .PCE(PCE), 
                         .PCPlus4E(PCPlus4E),
                         .RS1_E(RS1_E),
-                        .RS2_E(RS2_E)
+                        .RS2_E(RS2_E),
+								.led_R6(led_R6),
+								.leddecode(leddecode)
                     );
 
     // Execute Stage
@@ -107,7 +122,8 @@ module Pipeline_top(original_clk, rst,led);
                         .ALU_ResultM(ALU_ResultM),
                         .ResultW(ResultW),
                         .ForwardA_E(ForwardAE),
-                        .ForwardB_E(ForwardBE)
+                        .ForwardB_E(ForwardBE),
+								.ledexecute(ledexecute)
                     );
     
     // Memory Stage
@@ -126,7 +142,8 @@ module Pipeline_top(original_clk, rst,led);
                         .RD_W(RDW), 
                         .PCPlus4W(PCPlus4W), 
                         .ALU_ResultW(ALU_ResultW), 
-                        .ReadDataW(ReadDataW)
+                        .ReadDataW(ReadDataW),
+								.ledmemory(ledmemory)
                     );
 
     // Write Back Stage
@@ -137,7 +154,8 @@ module Pipeline_top(original_clk, rst,led);
                         .PCPlus4W(PCPlus4W), 
                         .ALU_ResultW(ALU_ResultW), 
                         .ReadDataW(ReadDataW), 
-                        .ResultW(ResultW)
+                        .ResultW(ResultW),
+								.ledwriteback(ledwriteback)
                     );
 
     // Hazard Unit

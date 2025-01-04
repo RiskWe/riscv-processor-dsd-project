@@ -1,6 +1,6 @@
 
 module execute_cycle(clk, rst, RegWriteE, ALUSrcE, MemWriteE, ResultSrcE, BranchE, ALUControlE, 
-    RD1_E, RD2_E, Imm_Ext_E, RD_E, PCE, PCPlus4E, PCSrcE, PCTargetE, RegWriteM, MemWriteM, ResultSrcM, RD_M, PCPlus4M, WriteDataM, ALU_ResultM, ResultW, ForwardA_E, ForwardB_E);
+    RD1_E, RD2_E, Imm_Ext_E, RD_E, PCE, PCPlus4E, PCSrcE, PCTargetE, RegWriteM, MemWriteM, ResultSrcM, RD_M, PCPlus4M, WriteDataM, ALU_ResultM, ResultW, ForwardA_E, ForwardB_E, ledexecute);
 
     // Declaration I/Os
     input clk, rst, RegWriteE,ALUSrcE,MemWriteE,ResultSrcE,BranchE;
@@ -10,6 +10,10 @@ module execute_cycle(clk, rst, RegWriteE, ALUSrcE, MemWriteE, ResultSrcE, Branch
     input [31:0] PCE, PCPlus4E;
     input [31:0] ResultW;
     input [1:0] ForwardA_E, ForwardB_E;
+	 
+	 output ledexecute;
+	 
+	 assign ledexecute = 1;
 
     output PCSrcE, RegWriteM, MemWriteM, ResultSrcM;
     output [4:0] RD_M; 

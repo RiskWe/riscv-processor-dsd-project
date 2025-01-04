@@ -1,0 +1,1062 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: Pipeline_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Pipeline_top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Pipeline_top"
+Output Format                      : NGC
+Target Device                      : xc6slx45-2-csg324
+
+---- Source Options
+Top Module Name                    : Pipeline_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\clock.v" into library work
+Parsing module <clock>.
+Analyzing Verilog file "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\Pipeline_Top.v" into library work
+Parsing verilog file "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/Fetch_Cycle.v" included at line 1.
+Parsing module <fetch_cycle>.
+Parsing verilog file "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/Decode_Cyle.v" included at line 2.
+Parsing module <decode_cycle>.
+Parsing verilog file "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/Execute_Cycle.v" included at line 3.
+Parsing module <execute_cycle>.
+Parsing verilog file "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/Memory_Cycle.v" included at line 4.
+Parsing module <memory_cycle>.
+Parsing verilog file "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/Writeback_Cycle.v" included at line 5.
+Parsing module <writeback_cycle>.
+Parsing verilog file "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/PC.v" included at line 6.
+Parsing module <PC_Module>.
+Parsing verilog file "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/PC_Adder.v" included at line 7.
+Parsing module <PC_Adder>.
+Parsing verilog file "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/Mux.v" included at line 8.
+Parsing module <Mux>.
+Parsing module <Mux_3_by_1>.
+Parsing verilog file "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/Instruction_Memory.v" included at line 9.
+Parsing module <Instruction_Memory>.
+Parsing verilog file "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/Control_Unit_Top.v" included at line 10.
+Parsing verilog file "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/ALU_Decoder.v" included at line 2.
+Parsing module <ALU_Decoder>.
+Parsing verilog file "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/Main_Decoder.v" included at line 3.
+Parsing module <Main_Decoder>.
+Parsing module <Control_Unit_Top>.
+Parsing verilog file "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/Register_File.v" included at line 11.
+Parsing module <Register_File>.
+Parsing verilog file "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/Sign_Extend.v" included at line 12.
+Parsing module <Sign_Extend>.
+Parsing verilog file "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/ALU.v" included at line 13.
+Parsing module <ALU>.
+Parsing verilog file "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/Data_Memory.v" included at line 14.
+Parsing module <Data_Memory>.
+Parsing verilog file "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/Hazard_unit.v" included at line 15.
+Parsing module <hazard_unit>.
+Parsing module <Pipeline_top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Pipeline_top>.
+
+Elaborating module <clock>.
+WARNING:HDLCompiler:413 - "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\clock.v" Line 25: Result of 25-bit expression is truncated to fit in 24-bit target.
+
+Elaborating module <fetch_cycle>.
+
+Elaborating module <Mux>.
+
+Elaborating module <PC_Module>.
+
+Elaborating module <Instruction_Memory>.
+Reading initialization file \"memfile.hex\".
+WARNING:HDLCompiler:1670 - "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/Instruction_Memory.v" Line 13: Signal <mem> in initial block is partially initialized.
+
+Elaborating module <PC_Adder>.
+
+Elaborating module <decode_cycle>.
+
+Elaborating module <Control_Unit_Top>.
+
+Elaborating module <Main_Decoder>.
+
+Elaborating module <ALU_Decoder>.
+
+Elaborating module <Register_File>.
+Reading initialization file \"regfile.hex\".
+
+Elaborating module <Sign_Extend>.
+
+Elaborating module <execute_cycle>.
+
+Elaborating module <Mux_3_by_1>.
+
+Elaborating module <ALU>.
+
+Elaborating module <memory_cycle>.
+
+Elaborating module <Data_Memory>.
+
+Elaborating module <writeback_cycle>.
+
+Elaborating module <hazard_unit>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Pipeline_top>.
+    Related source file is "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\Pipeline_Top.v".
+    Summary:
+	no macro.
+Unit <Pipeline_top> synthesized.
+
+Synthesizing Unit <clock>.
+    Related source file is "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\clock.v".
+        DIV_FACTOR = 10000000
+    Found 24-bit register for signal <counter>.
+    Found 1-bit register for signal <clk>.
+    Found 24-bit adder for signal <counter[23]_GND_2_o_add_2_OUT> created at line 25.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  25 D-type flip-flop(s).
+Unit <clock> synthesized.
+
+Synthesizing Unit <fetch_cycle>.
+    Related source file is "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/Fetch_Cycle.v".
+    Found 32-bit register for signal <PCF_reg>.
+    Found 32-bit register for signal <PCPlus4F_reg>.
+    Found 32-bit register for signal <InstrF_reg>.
+    Summary:
+	inferred  96 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+Unit <fetch_cycle> synthesized.
+
+Synthesizing Unit <Mux>.
+    Related source file is "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/Mux.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Mux> synthesized.
+
+Synthesizing Unit <PC_Module>.
+    Related source file is "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/PC.v".
+    Found 5-bit register for signal <leds>.
+    Found 32-bit register for signal <PC>.
+    Summary:
+	inferred  37 D-type flip-flop(s).
+Unit <PC_Module> synthesized.
+
+Synthesizing Unit <Instruction_Memory>.
+    Related source file is "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/Instruction_Memory.v".
+WARNING:Xst:647 - Input <A<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <A<31:12>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2999 - Signal 'mem', unconnected in block 'Instruction_Memory', is tied to its initial value.
+    Found 1024x32-bit single-port Read Only RAM <Mram_mem> for signal <mem>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Multiplexer(s).
+Unit <Instruction_Memory> synthesized.
+
+Synthesizing Unit <PC_Adder>.
+    Related source file is "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/PC_Adder.v".
+    Found 32-bit adder for signal <c> created at line 7.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <PC_Adder> synthesized.
+
+Synthesizing Unit <decode_cycle>.
+    Related source file is "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/Decode_Cyle.v".
+    Found 3-bit register for signal <ALUControlD_r>.
+    Found 32-bit register for signal <RD1_D_r>.
+    Found 32-bit register for signal <RD2_D_r>.
+    Found 32-bit register for signal <Imm_Ext_D_r>.
+    Found 32-bit register for signal <PCD_r>.
+    Found 32-bit register for signal <PCPlus4D_r>.
+    Found 5-bit register for signal <RD_D_r>.
+    Found 5-bit register for signal <RS1_D_r>.
+    Found 5-bit register for signal <RS2_D_r>.
+    Found 1-bit register for signal <ALUSrcD_r>.
+    Found 1-bit register for signal <MemWriteD_r>.
+    Found 1-bit register for signal <ResultSrcD_r>.
+    Found 1-bit register for signal <BranchD_r>.
+    Found 1-bit register for signal <RegWriteD_r>.
+    Summary:
+	inferred 183 D-type flip-flop(s).
+Unit <decode_cycle> synthesized.
+
+Synthesizing Unit <Control_Unit_Top>.
+    Related source file is "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/Control_Unit_Top.v".
+    Summary:
+	no macro.
+Unit <Control_Unit_Top> synthesized.
+
+Synthesizing Unit <Main_Decoder>.
+    Related source file is "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/Main_Decoder.v".
+    Summary:
+	inferred   3 Multiplexer(s).
+Unit <Main_Decoder> synthesized.
+
+Synthesizing Unit <ALU_Decoder>.
+    Related source file is "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/ALU_Decoder.v".
+WARNING:Xst:647 - Input <funct7<4:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <funct7<6:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <op<4:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <op<6:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	inferred   5 Multiplexer(s).
+Unit <ALU_Decoder> synthesized.
+
+Synthesizing Unit <Register_File>.
+    Related source file is "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/Register_File.v".
+    Found 32x32-bit dual-port RAM <Mram_Register> for signal <Register>.
+    Summary:
+	inferred   3 RAM(s).
+	inferred   2 Multiplexer(s).
+Unit <Register_File> synthesized.
+
+Synthesizing Unit <Sign_Extend>.
+    Related source file is "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/Sign_Extend.v".
+WARNING:Xst:647 - Input <In<6:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <In<19:12>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit 4-to-1 multiplexer for signal <Imm_Ext> created at line 4.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Sign_Extend> synthesized.
+
+Synthesizing Unit <execute_cycle>.
+    Related source file is "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/Execute_Cycle.v".
+INFO:Xst:3210 - "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/Execute_Cycle.v" line 60: Output port <OverFlow> of the instance <alu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/Execute_Cycle.v" line 60: Output port <Carry> of the instance <alu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/Execute_Cycle.v" line 60: Output port <Negative> of the instance <alu> is unconnected or connected to loadless signal.
+    Found 5-bit register for signal <RD_E_r>.
+    Found 32-bit register for signal <PCPlus4E_r>.
+    Found 32-bit register for signal <RD2_E_r>.
+    Found 32-bit register for signal <ResultE_r>.
+    Found 1-bit register for signal <MemWriteE_r>.
+    Found 1-bit register for signal <ResultSrcE_r>.
+    Found 1-bit register for signal <RegWriteE_r>.
+    Summary:
+	inferred 104 D-type flip-flop(s).
+Unit <execute_cycle> synthesized.
+
+Synthesizing Unit <Mux_3_by_1>.
+    Related source file is "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/Mux.v".
+    Found 32-bit 4-to-1 multiplexer for signal <d> created at line 15.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Mux_3_by_1> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/ALU.v".
+    Found 33-bit adder for signal <n0047> created at line 11.
+    Found 33-bit adder for signal <n0055> created at line 12.
+    Found 33-bit adder for signal <GND_16_o_GND_16_o_add_4_OUT> created at line 12.
+    Found 32-bit 6-to-1 multiplexer for signal <Result> created at line 6.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   2 Multiplexer(s).
+Unit <ALU> synthesized.
+
+Synthesizing Unit <memory_cycle>.
+    Related source file is "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/Memory_Cycle.v".
+    Found 5-bit register for signal <RD_M_r>.
+    Found 32-bit register for signal <PCPlus4M_r>.
+    Found 32-bit register for signal <ALU_ResultM_r>.
+    Found 32-bit register for signal <ReadDataM_r>.
+    Found 1-bit register for signal <ResultSrcM_r>.
+    Found 1-bit register for signal <RegWriteM_r>.
+    Summary:
+	inferred 103 D-type flip-flop(s).
+Unit <memory_cycle> synthesized.
+
+Synthesizing Unit <Data_Memory>.
+    Related source file is "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/Data_Memory.v".
+WARNING:Xst:647 - Input <A<31:10>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1024x32-bit single-port RAM <Mram_mem> for signal <mem>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Multiplexer(s).
+Unit <Data_Memory> synthesized.
+
+Synthesizing Unit <writeback_cycle>.
+    Related source file is "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/Writeback_Cycle.v".
+WARNING:Xst:647 - Input <PCPlus4W> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <writeback_cycle> synthesized.
+
+Synthesizing Unit <hazard_unit>.
+    Related source file is "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\CommonFiles\src\/Hazard_unit.v".
+    Found 5-bit comparator equal for signal <RD_M[4]_Rs1_E[4]_equal_4_o> created at line 10
+    Found 5-bit comparator equal for signal <RD_W[4]_Rs1_E[4]_equal_7_o> created at line 11
+    Found 5-bit comparator equal for signal <RD_M[4]_Rs2_E[4]_equal_14_o> created at line 14
+    Found 5-bit comparator equal for signal <RD_W[4]_Rs2_E[4]_equal_17_o> created at line 15
+    Summary:
+	inferred   4 Comparator(s).
+	inferred   4 Multiplexer(s).
+Unit <hazard_unit> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 5
+ 1024x32-bit single-port RAM                           : 1
+ 1024x32-bit single-port Read Only RAM                 : 1
+ 32x32-bit dual-port RAM                               : 3
+# Adders/Subtractors                                   : 5
+ 24-bit adder                                          : 1
+ 32-bit adder                                          : 2
+ 33-bit adder                                          : 2
+# Registers                                            : 34
+ 1-bit register                                        : 11
+ 24-bit register                                       : 1
+ 3-bit register                                        : 1
+ 32-bit register                                       : 15
+ 5-bit register                                        : 6
+# Comparators                                          : 4
+ 5-bit comparator equal                                : 4
+# Multiplexers                                         : 27
+ 2-bit 2-to-1 multiplexer                              : 7
+ 3-bit 2-to-1 multiplexer                              : 5
+ 32-bit 2-to-1 multiplexer                             : 10
+ 32-bit 4-to-1 multiplexer                             : 3
+ 32-bit 6-to-1 multiplexer                             : 1
+ 33-bit 2-to-1 multiplexer                             : 1
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Data_Memory>.
+INFO:Xst:3217 - HDL ADVISOR - Register <ReadDataM_r> currently described with an asynchronous reset, could be combined with distributed RAM <Mram_mem> for implementation on block RAM resources if you made this reset synchronous instead.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 32-bit                  |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <WE>            | high     |
+    |     addrA          | connected to signal <A>             |          |
+    |     diA            | connected to signal <WD>            |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_mem> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+Unit <Data_Memory> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Register_File>.
+INFO:Xst:3217 - HDL ADVISOR - Register <RD1_D_r> currently described with an asynchronous reset, could be combined with distributed RAM <Mram_Register1> for implementation on block RAM resources if you made this reset synchronous instead.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <A3>            |          |
+    |     diA            | connected to signal <WD3>           |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <A1>            |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3217 - HDL ADVISOR - Register <RD2_D_r> currently described with an asynchronous reset, could be combined with distributed RAM <Mram_Register2> for implementation on block RAM resources if you made this reset synchronous instead.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <A3>            |          |
+    |     diA            | connected to signal <WD3>           |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <A2>            |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_Register> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <A3>            |          |
+    |     diA            | connected to signal <WD3>           |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <"00110">       |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_Register1> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_Register2> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+Unit <Register_File> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clock>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <clock> synthesized (advanced).
+
+Synthesizing (advanced) Unit <fetch_cycle>.
+INFO:Xst:3226 - The RAM <IMEM/Mram_mem> will be implemented as a BLOCK RAM, absorbing the following register(s): <Program_Counter/PC>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 32-bit                  |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <PC_F<11:2>>    |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <fetch_cycle> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 5
+ 1024x32-bit single-port block Read Only RAM           : 1
+ 1024x32-bit single-port distributed RAM               : 1
+ 32x32-bit dual-port distributed RAM                   : 3
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 2
+ 33-bit adder                                          : 2
+# Counters                                             : 1
+ 24-bit up counter                                     : 1
+# Registers                                            : 524
+ Flip-Flops                                            : 524
+# Comparators                                          : 4
+ 5-bit comparator equal                                : 4
+# Multiplexers                                         : 27
+ 2-bit 2-to-1 multiplexer                              : 7
+ 3-bit 2-to-1 multiplexer                              : 5
+ 32-bit 2-to-1 multiplexer                             : 10
+ 32-bit 4-to-1 multiplexer                             : 3
+ 32-bit 6-to-1 multiplexer                             : 1
+ 33-bit 2-to-1 multiplexer                             : 1
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <Mram_Register2> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <Mram_Register3> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <Mram_Register6> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <Mram_Register4> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <Mram_Register5> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <Mram_Register71> of sequential type is unconnected in block <Register_File>.
+INFO:Xst:2261 - The FF/Latch <PCPlus4F_reg_0> in Unit <fetch_cycle> is equivalent to the following FF/Latch, which will be removed : <PCF_reg_0> 
+INFO:Xst:2261 - The FF/Latch <PCPlus4F_reg_1> in Unit <fetch_cycle> is equivalent to the following FF/Latch, which will be removed : <PCF_reg_1> 
+INFO:Xst:2261 - The FF/Latch <Imm_Ext_D_r_11> in Unit <decode_cycle> is equivalent to the following 20 FFs/Latches, which will be removed : <Imm_Ext_D_r_12> <Imm_Ext_D_r_13> <Imm_Ext_D_r_14> <Imm_Ext_D_r_15> <Imm_Ext_D_r_16> <Imm_Ext_D_r_17> <Imm_Ext_D_r_18> <Imm_Ext_D_r_19> <Imm_Ext_D_r_20> <Imm_Ext_D_r_21> <Imm_Ext_D_r_22> <Imm_Ext_D_r_23> <Imm_Ext_D_r_24> <Imm_Ext_D_r_25> <Imm_Ext_D_r_26> <Imm_Ext_D_r_27> <Imm_Ext_D_r_28> <Imm_Ext_D_r_29> <Imm_Ext_D_r_30> <Imm_Ext_D_r_31> 
+
+Optimizing unit <Pipeline_top> ...
+
+Optimizing unit <fetch_cycle> ...
+
+Optimizing unit <decode_cycle> ...
+
+Optimizing unit <Register_File> ...
+
+Optimizing unit <execute_cycle> ...
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <memory_cycle> ...
+WARNING:Xst:2677 - Node <Fetch/PCF_reg_31> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCF_reg_30> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCF_reg_29> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCF_reg_28> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCF_reg_27> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCF_reg_26> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCF_reg_25> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCF_reg_24> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCF_reg_23> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCF_reg_22> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCF_reg_21> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCF_reg_20> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCF_reg_19> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCF_reg_18> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCF_reg_17> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCF_reg_16> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCF_reg_15> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCF_reg_14> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCF_reg_13> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCF_reg_12> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/Program_Counter/PC_31> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/Program_Counter/PC_30> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/Program_Counter/PC_29> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/Program_Counter/PC_28> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/Program_Counter/PC_27> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/Program_Counter/PC_26> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/Program_Counter/PC_25> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/Program_Counter/PC_24> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/Program_Counter/PC_23> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/Program_Counter/PC_22> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/Program_Counter/PC_21> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/Program_Counter/PC_20> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/Program_Counter/PC_19> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/Program_Counter/PC_18> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/Program_Counter/PC_17> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/Program_Counter/PC_16> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/Program_Counter/PC_15> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/Program_Counter/PC_14> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/Program_Counter/PC_13> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/Program_Counter/PC_12> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCPlus4F_reg_31> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCPlus4F_reg_30> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCPlus4F_reg_29> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCPlus4F_reg_28> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCPlus4F_reg_27> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCPlus4F_reg_26> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCPlus4F_reg_25> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCPlus4F_reg_24> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCPlus4F_reg_23> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCPlus4F_reg_22> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCPlus4F_reg_21> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCPlus4F_reg_20> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCPlus4F_reg_19> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCPlus4F_reg_18> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCPlus4F_reg_17> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCPlus4F_reg_16> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCPlus4F_reg_15> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCPlus4F_reg_14> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCPlus4F_reg_13> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCPlus4F_reg_12> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCPlus4F_reg_11> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCPlus4F_reg_10> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCPlus4F_reg_9> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCPlus4F_reg_8> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCPlus4F_reg_7> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCPlus4F_reg_6> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCPlus4F_reg_5> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCPlus4F_reg_4> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCPlus4F_reg_3> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Fetch/PCPlus4F_reg_2> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCD_r_31> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCD_r_30> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCD_r_29> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCD_r_28> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCD_r_27> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCD_r_26> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCD_r_25> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCD_r_24> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCD_r_23> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCD_r_22> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCD_r_21> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCD_r_20> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCD_r_19> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCD_r_18> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCD_r_17> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCD_r_16> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCD_r_15> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCD_r_14> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCD_r_13> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCD_r_12> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCPlus4D_r_31> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCPlus4D_r_30> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCPlus4D_r_29> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCPlus4D_r_28> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCPlus4D_r_27> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCPlus4D_r_26> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCPlus4D_r_25> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCPlus4D_r_24> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCPlus4D_r_23> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCPlus4D_r_22> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCPlus4D_r_21> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCPlus4D_r_20> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCPlus4D_r_19> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCPlus4D_r_18> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCPlus4D_r_17> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCPlus4D_r_16> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCPlus4D_r_15> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCPlus4D_r_14> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCPlus4D_r_13> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCPlus4D_r_12> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCPlus4D_r_11> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCPlus4D_r_10> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCPlus4D_r_9> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCPlus4D_r_8> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCPlus4D_r_7> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCPlus4D_r_6> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCPlus4D_r_5> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCPlus4D_r_4> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCPlus4D_r_3> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCPlus4D_r_2> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCPlus4D_r_1> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Decode/PCPlus4D_r_0> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Execute/PCPlus4E_r_31> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Execute/PCPlus4E_r_30> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Execute/PCPlus4E_r_29> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Execute/PCPlus4E_r_28> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Execute/PCPlus4E_r_27> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Execute/PCPlus4E_r_26> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Execute/PCPlus4E_r_25> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Execute/PCPlus4E_r_24> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Execute/PCPlus4E_r_23> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Execute/PCPlus4E_r_22> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Execute/PCPlus4E_r_21> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Execute/PCPlus4E_r_20> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Execute/PCPlus4E_r_19> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Execute/PCPlus4E_r_18> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Execute/PCPlus4E_r_17> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Execute/PCPlus4E_r_16> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Execute/PCPlus4E_r_15> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Execute/PCPlus4E_r_14> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Execute/PCPlus4E_r_13> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Execute/PCPlus4E_r_12> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Execute/PCPlus4E_r_11> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Execute/PCPlus4E_r_10> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Execute/PCPlus4E_r_9> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Execute/PCPlus4E_r_8> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Execute/PCPlus4E_r_7> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Execute/PCPlus4E_r_6> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Execute/PCPlus4E_r_5> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Execute/PCPlus4E_r_4> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Execute/PCPlus4E_r_3> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Execute/PCPlus4E_r_2> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Execute/PCPlus4E_r_1> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Execute/PCPlus4E_r_0> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Memory/PCPlus4M_r_31> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Memory/PCPlus4M_r_30> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Memory/PCPlus4M_r_29> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Memory/PCPlus4M_r_28> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Memory/PCPlus4M_r_27> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Memory/PCPlus4M_r_26> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Memory/PCPlus4M_r_25> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Memory/PCPlus4M_r_24> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Memory/PCPlus4M_r_23> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Memory/PCPlus4M_r_22> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Memory/PCPlus4M_r_21> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Memory/PCPlus4M_r_20> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Memory/PCPlus4M_r_19> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Memory/PCPlus4M_r_18> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Memory/PCPlus4M_r_17> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Memory/PCPlus4M_r_16> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Memory/PCPlus4M_r_15> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Memory/PCPlus4M_r_14> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Memory/PCPlus4M_r_13> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Memory/PCPlus4M_r_12> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Memory/PCPlus4M_r_11> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Memory/PCPlus4M_r_10> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Memory/PCPlus4M_r_9> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Memory/PCPlus4M_r_8> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Memory/PCPlus4M_r_7> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Memory/PCPlus4M_r_6> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Memory/PCPlus4M_r_5> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Memory/PCPlus4M_r_4> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Memory/PCPlus4M_r_3> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Memory/PCPlus4M_r_2> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Memory/PCPlus4M_r_1> of sequential type is unconnected in block <Pipeline_top>.
+WARNING:Xst:2677 - Node <Memory/PCPlus4M_r_0> of sequential type is unconnected in block <Pipeline_top>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Pipeline_top, actual ratio is 2.
+FlipFlop Memory/RD_M_r_2 has been replicated 2 time(s)
+FlipFlop Memory/RD_M_r_3 has been replicated 2 time(s)
+FlipFlop Memory/ResultSrcM_r has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 345
+ Flip-Flops                                            : 345
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Pipeline_top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 881
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 32
+#      LUT2                        : 153
+#      LUT3                        : 133
+#      LUT4                        : 6
+#      LUT5                        : 104
+#      LUT6                        : 231
+#      MUXCY                       : 105
+#      MUXF7                       : 2
+#      VCC                         : 1
+#      XORCY                       : 110
+# FlipFlops/Latches                : 345
+#      FD                          : 5
+#      FDC                         : 303
+#      FDE                         : 1
+#      FDR                         : 36
+# RAMS                             : 145
+#      RAM256X1S                   : 128
+#      RAM32M                      : 10
+#      RAM32X1D                    : 5
+#      RAMB16BWER                  : 2
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 13
+#      IBUF                        : 1
+#      OBUF                        : 12
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             345  out of  54576     0%  
+ Number of Slice LUTs:                 1224  out of  27288     4%  
+    Number used as Logic:               662  out of  27288     2%  
+    Number used as Memory:              562  out of   6408     8%  
+       Number used as RAM:              562
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1322
+   Number with an unused Flip Flop:     977  out of   1322    73%  
+   Number with an unused LUT:            98  out of   1322     7%  
+   Number of fully used LUT-FF pairs:   247  out of   1322    18%  
+   Number of unique control sets:         5
+
+IO Utilization: 
+ Number of IOs:                          14
+ Number of bonded IOBs:                  14  out of    218     6%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                2  out of    116     1%  
+    Number using Block RAM only:          2
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+original_clk                       | BUFGP                  | 25    |
+clock_inst/clk                     | BUFG                   | 465   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 13.563ns (Maximum Frequency: 73.730MHz)
+   Minimum input arrival time before clock: 16.032ns
+   Maximum output required time after clock: 4.605ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'original_clk'
+  Clock period: 6.148ns (frequency: 162.655MHz)
+  Total number of paths / destination ports: 901 / 50
+-------------------------------------------------------------------------
+Delay:               6.148ns (Levels of Logic = 3)
+  Source:            clock_inst/counter_7 (FF)
+  Destination:       clock_inst/counter_0 (FF)
+  Source Clock:      original_clk rising
+  Destination Clock: original_clk rising
+
+  Data Path: clock_inst/counter_7 to clock_inst/counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.525   1.181  clock_inst/counter_7 (clock_inst/counter_7)
+     LUT6:I0->O            1   0.254   1.137  clock_inst/GND_2_o_GND_2_o_equal_4_o<23>1 (clock_inst/GND_2_o_GND_2_o_equal_4_o<23>)
+     LUT6:I0->O            1   0.254   0.682  clock_inst/GND_2_o_GND_2_o_equal_4_o<23>2 (clock_inst/GND_2_o_GND_2_o_equal_4_o<23>1)
+     LUT5:I4->O           25   0.254   1.402  clock_inst/GND_2_o_GND_2_o_equal_4_o<23>5 (clock_inst/GND_2_o_GND_2_o_equal_4_o)
+     FDR:R                     0.459          clock_inst/counter_0
+    ----------------------------------------
+    Total                      6.148ns (1.746ns logic, 4.402ns route)
+                                       (28.4% logic, 71.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock_inst/clk'
+  Clock period: 13.563ns (frequency: 73.730MHz)
+  Total number of paths / destination ports: 28529863 / 1795
+-------------------------------------------------------------------------
+Delay:               13.563ns (Levels of Logic = 13)
+  Source:            Decode/RS2_D_r_1 (FF)
+  Destination:       Fetch_IMEM/Mram_mem2 (RAM)
+  Source Clock:      clock_inst/clk rising
+  Destination Clock: clock_inst/clk rising
+
+  Data Path: Decode/RS2_D_r_1 to Fetch_IMEM/Mram_mem2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              6   0.525   1.306  Decode/RS2_D_r_1 (Decode/RS2_D_r_1)
+     LUT6:I1->O            4   0.254   0.912  Forwarding_block/RegWriteM_RD_M[4]_AND_81_o57_SW3 (N116)
+     LUT6:I4->O            7   0.250   1.018  Forwarding_block/RegWriteM_RD_M[4]_AND_81_o57 (Forwarding_block/RegWriteM_RD_M[4]_AND_81_o5)
+     LUT6:I4->O            8   0.250   1.052  Forwarding_block/Mmux_ForwardBE16_1 (Forwarding_block/Mmux_ForwardBE16)
+     LUT6:I4->O            1   0.250   0.000  Execute/alu/n0052<1>1 (Execute/alu/n0052<1>)
+     MUXCY:S->O            1   0.215   0.000  Execute/alu/Madd_n0055_cy<1> (Execute/alu/Madd_n0055_cy<1>)
+     XORCY:CI->O           1   0.206   0.682  Execute/alu/Madd_n0055_xor<2> (Execute/alu/n0055<2>)
+     LUT6:I5->O            1   0.254   0.000  Execute/alu/Mmux_n0033_rs_lut<2> (Execute/alu/Mmux_n0033_rs_lut<2>)
+     MUXCY:S->O            1   0.215   0.000  Execute/alu/Mmux_n0033_rs_cy<2> (Execute/alu/Mmux_n0033_rs_cy<2>)
+     XORCY:CI->O           1   0.206   0.682  Execute/alu/Mmux_n0033_rs_xor<3> (Execute/alu/n0033<3>)
+     LUT6:I5->O            2   0.254   0.954  Execute/alu/Mmux_Result261 (Execute/ResultE<3>)
+     LUT6:I3->O           13   0.235   1.098  Execute/PCSrcE5 (Execute/PCSrcE4)
+     LUT6:I5->O           10   0.254   1.116  Execute/PCSrcE6 (Execute/PCSrcE5)
+     LUT6:I4->O            2   0.250   0.725  Fetch/PC_F<11>_01 (Fetch/PC_F<11>_0)
+     RAMB16BWER:ADDRA13        0.400          Fetch_IMEM/Mram_mem1
+    ----------------------------------------
+    Total                     13.563ns (4.018ns logic, 9.545ns route)
+                                       (29.6% logic, 70.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock_inst/clk'
+  Total number of paths / destination ports: 1906698 / 611
+-------------------------------------------------------------------------
+Offset:              16.032ns (Levels of Logic = 13)
+  Source:            pre_rst (PAD)
+  Destination:       Fetch_IMEM/Mram_mem2 (RAM)
+  Destination Clock: clock_inst/clk rising
+
+  Data Path: pre_rst to Fetch_IMEM/Mram_mem2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           524   1.328   2.893  pre_rst_IBUF (Decode/rst_inv)
+     LUT5:I0->O            3   0.254   1.196  Forwarding_block/RegWriteM_RD_M[4]_AND_81_o57_SW1 (N181)
+     LUT6:I1->O           60   0.254   2.127  Forwarding_block/Mmux_ForwardBE21 (ForwardBE<1>)
+     LUT6:I3->O            1   0.235   0.000  Execute/alu/n0052<1>1 (Execute/alu/n0052<1>)
+     MUXCY:S->O            1   0.215   0.000  Execute/alu/Madd_n0055_cy<1> (Execute/alu/Madd_n0055_cy<1>)
+     XORCY:CI->O           1   0.206   0.682  Execute/alu/Madd_n0055_xor<2> (Execute/alu/n0055<2>)
+     LUT6:I5->O            1   0.254   0.000  Execute/alu/Mmux_n0033_rs_lut<2> (Execute/alu/Mmux_n0033_rs_lut<2>)
+     MUXCY:S->O            1   0.215   0.000  Execute/alu/Mmux_n0033_rs_cy<2> (Execute/alu/Mmux_n0033_rs_cy<2>)
+     XORCY:CI->O           1   0.206   0.682  Execute/alu/Mmux_n0033_rs_xor<3> (Execute/alu/n0033<3>)
+     LUT6:I5->O            2   0.254   0.954  Execute/alu/Mmux_Result261 (Execute/ResultE<3>)
+     LUT6:I3->O           13   0.235   1.098  Execute/PCSrcE5 (Execute/PCSrcE4)
+     LUT6:I5->O           10   0.254   1.116  Execute/PCSrcE6 (Execute/PCSrcE5)
+     LUT6:I4->O            2   0.250   0.725  Fetch/PC_F<11>_01 (Fetch/PC_F<11>_0)
+     RAMB16BWER:ADDRA13        0.400          Fetch_IMEM/Mram_mem1
+    ----------------------------------------
+    Total                     16.032ns (4.560ns logic, 11.472ns route)
+                                       (28.4% logic, 71.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock_inst/clk'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              4.605ns (Levels of Logic = 1)
+  Source:            Decode/rf/Mram_Register72 (RAM)
+  Destination:       led_R6 (PAD)
+  Source Clock:      clock_inst/clk rising
+
+  Data Path: Decode/rf/Mram_Register72 to led_R6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAM32X1D:WCLK->DPO    1   1.012   0.681  Decode/rf/Mram_Register72 (led_R6_OBUF)
+     OBUF:I->O                 2.912          led_R6_OBUF (led_R6)
+    ----------------------------------------
+    Total                      4.605ns (3.924ns logic, 0.681ns route)
+                                       (85.2% logic, 14.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'original_clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.162ns (Levels of Logic = 1)
+  Source:            clock_inst/clk (FF)
+  Destination:       led (PAD)
+  Source Clock:      original_clk rising
+
+  Data Path: clock_inst/clk to led
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.525   0.725  clock_inst/clk (clock_inst/clk)
+     OBUF:I->O                 2.912          led_OBUF (led)
+    ----------------------------------------
+    Total                      4.162ns (3.437ns logic, 0.725ns route)
+                                       (82.6% logic, 17.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clock_inst/clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock_inst/clk |   13.563|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock original_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+original_clk   |    6.148|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.95 secs
+ 
+--> 
+
+Total memory usage is 4503760 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  207 (   0 filtered)
+Number of infos    :   15 (   0 filtered)
+
