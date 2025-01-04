@@ -15,10 +15,10 @@
 `include "Hazard_unit.v"
 
 
-module Pipeline_top(original_clk, rst, led, led_R6, ledfetch, leddecode, ledexecute, ledmemory, ledwriteback, leds);
+module Pipeline_top(original_clk, pre_rst, led, led_R6, ledfetch, leddecode, ledexecute, ledmemory, ledwriteback, leds);
 
     // Declaration of I/O
-    input original_clk, rst;
+    input original_clk, pre_rst;
 	 output led;
 	 output led_R6;
 	 output ledfetch;
@@ -37,9 +37,11 @@ module Pipeline_top(original_clk, rst, led, led_R6, ledfetch, leddecode, ledexec
     wire [4:0] RS1_E, RS2_E;
     wire [1:0] ForwardBE, ForwardAE;
 	 wire clk;
-    
+    wire rst;
+	 
 	 wire test;
-	 assign test = 1;
+	 assign test = 0;
+	 assign rst = ~pre_rst;
 
 		// Clock module instantiation
 		clock clock_inst (

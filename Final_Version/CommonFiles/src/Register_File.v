@@ -8,9 +8,11 @@ module Register_File(clk,rst,WE3,WD3,A1,A2,A3,RD1,RD2,led_R6);
 	 
 	 output wire led_R6;//added
 	 
-	 assign led_R6 = Register[6][4];
+	 
 
     reg [31:0] Register [31:0];
+	 
+	 assign led_R6 = Register[6][31];
 
     always @ (posedge clk)
     begin

@@ -11,10 +11,8 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-# run all
-Stopped at time : 1200 ns : File "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/CommonFiles/src/pipeline_tb.v" Line 15
 # restart
 # run all
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-Stopped at time : 1200 ns : File "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/CommonFiles/src/pipeline_tb.v" Line 15
+Stopped at time : 6200 ns : File "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/CommonFiles/src/pipeline_tb.v" Line 15

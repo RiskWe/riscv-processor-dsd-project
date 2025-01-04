@@ -11,7 +11,7 @@ module tb();
         rst <= 1'b0;
         #200;
         rst <= 1'b1;
-        #1000;
+        #6000;
         $finish;    
     end
 

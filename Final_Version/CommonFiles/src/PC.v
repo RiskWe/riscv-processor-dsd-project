@@ -13,9 +13,8 @@ module PC_Module(clk,rst,PC,PC_Next,leds);
         if(rst == 1'b0)
             PC <= {32{1'b0}};
         else
-            //PC <= PC_Next;
-				PC <= 32'b11111111111111111111111111111111;
-				leds <= PC[4:0];			
+            PC <= PC_Next;
+				leds <= PC_Next[6:2];
     end
 	 
 	 /*// Assign the 5 least significant bits of the counter to the LEDs

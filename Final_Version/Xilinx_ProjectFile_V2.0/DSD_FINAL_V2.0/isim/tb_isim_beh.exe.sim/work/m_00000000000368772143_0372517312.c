@@ -23,7 +23,6 @@
 #endif
 static const char *ng0 = "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/CommonFiles/src/PC.v";
 static unsigned int ng1[] = {0U, 0U};
-static unsigned int ng2[] = {4294967295U, 0U};
 
 
 
@@ -112,30 +111,30 @@ LAB9:    t22 = (t6 + 4);
     if (t27 > 0)
         goto LAB10;
 
-LAB11:    xsi_set_current_line(17, ng0);
-    t2 = ((char*)((ng2)));
-    t3 = (t0 + 1768);
-    xsi_vlogvar_wait_assign_value(t3, t2, 0, 0, 32, 0LL);
-
-LAB12:    xsi_set_current_line(18, ng0);
+LAB11:    xsi_set_current_line(16, ng0);
+    t2 = (t0 + 1368U);
+    t3 = *((char **)t2);
     t2 = (t0 + 1768);
-    t3 = (t2 + 56U);
-    t4 = *((char **)t3);
+    xsi_vlogvar_wait_assign_value(t2, t3, 0, 0, 32, 0LL);
+
+LAB12:    xsi_set_current_line(17, ng0);
+    t2 = (t0 + 1368U);
+    t3 = *((char **)t2);
     memset(t6, 0, 8);
-    t5 = (t6 + 4);
-    t7 = (t4 + 4);
-    t9 = *((unsigned int *)t4);
-    t10 = (t9 >> 0);
+    t2 = (t6 + 4);
+    t4 = (t3 + 4);
+    t9 = *((unsigned int *)t3);
+    t10 = (t9 >> 2);
     *((unsigned int *)t6) = t10;
-    t11 = *((unsigned int *)t7);
-    t12 = (t11 >> 0);
-    *((unsigned int *)t5) = t12;
+    t11 = *((unsigned int *)t4);
+    t12 = (t11 >> 2);
+    *((unsigned int *)t2) = t12;
     t13 = *((unsigned int *)t6);
     *((unsigned int *)t6) = (t13 & 31U);
-    t14 = *((unsigned int *)t5);
-    *((unsigned int *)t5) = (t14 & 31U);
-    t8 = (t0 + 1928);
-    xsi_vlogvar_wait_assign_value(t8, t6, 0, 0, 5, 0LL);
+    t14 = *((unsigned int *)t2);
+    *((unsigned int *)t2) = (t14 & 31U);
+    t5 = (t0 + 1928);
+    xsi_vlogvar_wait_assign_value(t5, t6, 0, 0, 5, 0LL);
     goto LAB2;
 
 LAB8:    t21 = (t6 + 4);
@@ -151,14 +150,14 @@ LAB10:    xsi_set_current_line(14, ng0);
 
 }
 
-static void Initial_27_1(char *t0)
+static void Initial_26_1(char *t0)
 {
     char *t1;
     char *t2;
 
-LAB0:    xsi_set_current_line(27, ng0);
+LAB0:    xsi_set_current_line(26, ng0);
 
-LAB2:    xsi_set_current_line(28, ng0);
+LAB2:    xsi_set_current_line(27, ng0);
     t1 = ((char*)((ng1)));
     t2 = (t0 + 1768);
     xsi_vlogvar_wait_assign_value(t2, t1, 0, 0, 32, 0LL);
@@ -169,7 +168,7 @@ LAB1:    return;
 
 extern void work_m_00000000000368772143_0372517312_init()
 {
-	static char *pe[] = {(void *)Always_11_0,(void *)Initial_27_1};
+	static char *pe[] = {(void *)Always_11_0,(void *)Initial_26_1};
 	xsi_register_didat("work_m_00000000000368772143_0372517312", "isim/tb_isim_beh.exe.sim/work/m_00000000000368772143_0372517312.didat");
 	xsi_register_executes(pe);
 }
