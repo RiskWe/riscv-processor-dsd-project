@@ -1,0 +1,5 @@
+verilog work "substractor_float.v"
+verilog work "fp_multiplier_32.v"
+verilog work "adder_float.v"
+verilog work "top_fp_operations.v"
+verilog work "tb_top_fp_operations.v"

@@ -1,0 +1,43 @@
+xst -intstyle ise -ifn "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Inidivual_V2.0/top_fp_operations.xst" -ofn "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Inidivual_V2.0/top_fp_operations.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinAssign.ucf -p xc6slx45-csg324-2 top_fp_operations.ngc top_fp_operations.ngd  
+xst -intstyle ise -ifn "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Inidivual_V2.0/top_fp_operations.xst" -ofn "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Inidivual_V2.0/top_fp_operations.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinAssign.ucf -p xc6slx45-csg324-2 top_fp_operations.ngc top_fp_operations.ngd  
+xst -intstyle ise -ifn "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Inidivual_V2.0/top_fp_operations.xst" -ofn "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Inidivual_V2.0/top_fp_operations.syr" 
+xst -intstyle ise -ifn "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Inidivual_V2.0/top_fp_operations.xst" -ofn "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Inidivual_V2.0/top_fp_operations.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinAssign.ucf -p xc6slx45-csg324-2 top_fp_operations.ngc top_fp_operations.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_fp_operations_map.ncd top_fp_operations.ngd top_fp_operations.pcf 
+par -w -intstyle ise -ol high -mt off top_fp_operations_map.ncd top_fp_operations.ncd top_fp_operations.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_fp_operations.twx top_fp_operations.ncd -o top_fp_operations.twr top_fp_operations.pcf -ucf pinAssign.ucf 
+bitgen -intstyle ise -f top_fp_operations.ut top_fp_operations.ncd 
+xst -intstyle ise -ifn "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Inidivual_V2.0/top_fp_operations.xst" -ofn "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Inidivual_V2.0/top_fp_operations.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinAssign.ucf -p xc6slx45-csg324-2 top_fp_operations.ngc top_fp_operations.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_fp_operations_map.ncd top_fp_operations.ngd top_fp_operations.pcf 
+par -w -intstyle ise -ol high -mt off top_fp_operations_map.ncd top_fp_operations.ncd top_fp_operations.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_fp_operations.twx top_fp_operations.ncd -o top_fp_operations.twr top_fp_operations.pcf -ucf pinAssign.ucf 
+bitgen -intstyle ise -f top_fp_operations.ut top_fp_operations.ncd 
+xst -intstyle ise -ifn "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Inidivual_V2.0/top_fp_operations.xst" -ofn "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Inidivual_V2.0/top_fp_operations.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinAssign.ucf -p xc6slx45-csg324-2 top_fp_operations.ngc top_fp_operations.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_fp_operations_map.ncd top_fp_operations.ngd top_fp_operations.pcf 
+par -w -intstyle ise -ol high -mt off top_fp_operations_map.ncd top_fp_operations.ncd top_fp_operations.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_fp_operations.twx top_fp_operations.ncd -o top_fp_operations.twr top_fp_operations.pcf -ucf pinAssign.ucf 
+bitgen -intstyle ise -f top_fp_operations.ut top_fp_operations.ncd 
+xst -intstyle ise -ifn "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Inidivual_V2.0/top_fp_operations.xst" -ofn "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Inidivual_V2.0/top_fp_operations.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinAssign.ucf -p xc6slx45-csg324-2 top_fp_operations.ngc top_fp_operations.ngd  
+xst -intstyle ise -ifn "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Inidivual_V2.0/top_fp_operations.xst" -ofn "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Inidivual_V2.0/top_fp_operations.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinAssign.ucf -p xc6slx45-csg324-2 top_fp_operations.ngc top_fp_operations.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_fp_operations_map.ncd top_fp_operations.ngd top_fp_operations.pcf 
+par -w -intstyle ise -ol high -mt off top_fp_operations_map.ncd top_fp_operations.ncd top_fp_operations.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_fp_operations.twx top_fp_operations.ncd -o top_fp_operations.twr top_fp_operations.pcf -ucf pinAssign.ucf 
+bitgen -intstyle ise -f top_fp_operations.ut top_fp_operations.ncd 
+xst -intstyle ise -ifn "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Inidivual_V2.0/top_fp_operations.xst" -ofn "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Inidivual_V2.0/top_fp_operations.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinAssign.ucf -p xc6slx45-csg324-2 top_fp_operations.ngc top_fp_operations.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_fp_operations_map.ncd top_fp_operations.ngd top_fp_operations.pcf 
+par -w -intstyle ise -ol high -mt off top_fp_operations_map.ncd top_fp_operations.ncd top_fp_operations.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_fp_operations.twx top_fp_operations.ncd -o top_fp_operations.twr top_fp_operations.pcf -ucf pinAssign.ucf 
+bitgen -intstyle ise -f top_fp_operations.ut top_fp_operations.ncd 
+xst -intstyle ise -ifn "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Inidivual_V2.0/top_fp_operations.xst" -ofn "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Inidivual_V2.0/top_fp_operations.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinAssign.ucf -p xc6slx45-csg324-2 top_fp_operations.ngc top_fp_operations.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_fp_operations_map.ncd top_fp_operations.ngd top_fp_operations.pcf 
+par -w -intstyle ise -ol high -mt off top_fp_operations_map.ncd top_fp_operations.ncd top_fp_operations.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_fp_operations.twx top_fp_operations.ncd -o top_fp_operations.twr top_fp_operations.pcf -ucf pinAssign.ucf 
+bitgen -intstyle ise -f top_fp_operations.ut top_fp_operations.ncd 

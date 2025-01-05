@@ -1,0 +1,728 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: top_fp_operations.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top_fp_operations.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top_fp_operations"
+Output Format                      : NGC
+Target Device                      : xc6slx45-2-csg324
+
+---- Source Options
+Top Module Name                    : top_fp_operations
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\Inidivual_V2.0\substractor_float.v" into library work
+Parsing module <substractor_float>.
+Parsing module <leading_zero_counter_sync>.
+Analyzing Verilog file "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\Inidivual_V2.0\fp_multiplier_32.v" into library work
+Parsing module <fp_multiplier_32>.
+Analyzing Verilog file "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\Inidivual_V2.0\adder_float.v" into library work
+Parsing module <adder_float>.
+Analyzing Verilog file "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\Inidivual_V2.0\top_fp_operations.v" into library work
+Parsing module <top_fp_operations>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <top_fp_operations>.
+
+Elaborating module <adder_float>.
+WARNING:HDLCompiler:413 - "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\Inidivual_V2.0\adder_float.v" Line 52: Result of 9-bit expression is truncated to fit in 8-bit target.
+
+Elaborating module <substractor_float>.
+
+Elaborating module <leading_zero_counter_sync>.
+WARNING:HDLCompiler:413 - "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\Inidivual_V2.0\substractor_float.v" Line 79: Result of 6-bit expression is truncated to fit in 5-bit target.
+
+Elaborating module <fp_multiplier_32>.
+WARNING:HDLCompiler:413 - "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\Inidivual_V2.0\fp_multiplier_32.v" Line 57: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\Inidivual_V2.0\fp_multiplier_32.v" Line 60: Result of 9-bit expression is truncated to fit in 8-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top_fp_operations>.
+    Related source file is "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\Inidivual_V2.0\top_fp_operations.v".
+    Found 32-bit register for signal <result>.
+    Found 32-bit 4-to-1 multiplexer for signal <select[1]_GND_1_o_wide_mux_3_OUT> created at line 44.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <top_fp_operations> synthesized.
+
+Synthesizing Unit <adder_float>.
+    Related source file is "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\Inidivual_V2.0\adder_float.v".
+    Found 24-bit register for signal <mant_a_shifted>.
+    Found 24-bit register for signal <mant_b_shifted>.
+    Found 25-bit register for signal <mant_sum>.
+    Found 23-bit register for signal <mant_result<22:0>>.
+    Found 8-bit register for signal <exp_result>.
+    Found 32-bit register for signal <result>.
+    Found 8-bit register for signal <exp_common>.
+    Found 8-bit subtractor for signal <exp_a[7]_exp_b[7]_sub_7_OUT> created at line 30.
+    Found 25-bit adder for signal <GND_2_o_BUS_0001_mux_19_OUT> created at line 39.
+    Found 8-bit adder for signal <exp_common[7]_GND_2_o_add_20_OUT> created at line 52.
+    Found 24-bit shifter logical right for signal <mant_b[23]_exp_a[7]_shift_right_7_OUT> created at line 30
+    Found 24-bit shifter logical right for signal <mant_a[23]_exp_b[7]_shift_right_9_OUT> created at line 33
+    Found 8-bit comparator greater for signal <exp_b[7]_exp_a[7]_LessThan_6_o> created at line 27
+    WARNING:Xst:2404 -  FFs/Latches <sign_result<0:0>> (without init value) have a constant value of 0 in block <adder_float>.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred 144 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   5 Multiplexer(s).
+	inferred   2 Combinational logic shifter(s).
+Unit <adder_float> synthesized.
+
+Synthesizing Unit <substractor_float>.
+    Related source file is "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\Inidivual_V2.0\substractor_float.v".
+    Found 24-bit register for signal <mantissa_diff>.
+    Found 32-bit register for signal <result>.
+    Found 8-bit subtractor for signal <a[30]_b[30]_sub_3_OUT> created at line 32.
+    Found 25-bit subtractor for signal <GND_4_o_GND_4_o_sub_12_OUT> created at line 43.
+    Found 25-bit subtractor for signal <GND_4_o_GND_4_o_sub_13_OUT> created at line 46.
+    Found 8-bit subtractor for signal <b[30]_GND_4_o_sub_17_OUT> created at line 54.
+    Found 24-bit shifter logical right for signal <PWR_5_o_a[30]_shift_right_3_OUT> created at line 33
+    Found 24-bit shifter logical right for signal <PWR_5_o_b[30]_shift_right_5_OUT> created at line 37
+    Found 24-bit shifter logical left for signal <GND_4_o_leading_zeros[4]_shift_left_15_OUT> created at line 53
+    Found 8-bit comparator greater for signal <b[30]_a[30]_LessThan_2_o> created at line 31
+    Found 24-bit comparator lessequal for signal <n0009> created at line 42
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  56 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   7 Multiplexer(s).
+	inferred   3 Combinational logic shifter(s).
+Unit <substractor_float> synthesized.
+
+Synthesizing Unit <leading_zero_counter_sync>.
+    Related source file is "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\Inidivual_V2.0\substractor_float.v".
+    Found 5-bit register for signal <count>.
+    Summary:
+	inferred   5 D-type flip-flop(s).
+	inferred  43 Multiplexer(s).
+Unit <leading_zero_counter_sync> synthesized.
+
+Synthesizing Unit <fp_multiplier_32>.
+    Related source file is "E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\Inidivual_V2.0\fp_multiplier_32.v".
+    Found 32-bit register for signal <result>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <fp_multiplier_32> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 6
+ 25-bit adder                                          : 1
+ 25-bit subtractor                                     : 1
+ 8-bit adder                                           : 1
+ 8-bit subtractor                                      : 3
+# Registers                                            : 12
+ 23-bit register                                       : 1
+ 24-bit register                                       : 3
+ 25-bit register                                       : 1
+ 32-bit register                                       : 4
+ 5-bit register                                        : 1
+ 8-bit register                                        : 2
+# Comparators                                          : 3
+ 24-bit comparator lessequal                           : 1
+ 8-bit comparator greater                              : 2
+# Multiplexers                                         : 56
+ 1-bit 2-to-1 multiplexer                              : 22
+ 24-bit 2-to-1 multiplexer                             : 8
+ 25-bit 2-to-1 multiplexer                             : 2
+ 32-bit 4-to-1 multiplexer                             : 1
+ 5-bit 2-to-1 multiplexer                              : 21
+ 8-bit 2-to-1 multiplexer                              : 2
+# Logic shifters                                       : 5
+ 24-bit shifter logical left                           : 1
+ 24-bit shifter logical right                          : 4
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <exp_common_1> in Unit <u_add> is equivalent to the following 5 FFs/Latches, which will be removed : <exp_common_2> <exp_common_3> <exp_common_4> <exp_common_5> <exp_common_6> 
+INFO:Xst:2261 - The FF/Latch <result_17> in Unit <u_mul> is equivalent to the following 6 FFs/Latches, which will be removed : <result_18> <result_20> <result_21> <result_23> <result_24> <result_30> 
+INFO:Xst:2261 - The FF/Latch <result_0> in Unit <u_mul> is equivalent to the following 24 FFs/Latches, which will be removed : <result_1> <result_2> <result_3> <result_4> <result_5> <result_6> <result_7> <result_8> <result_9> <result_10> <result_11> <result_12> <result_13> <result_14> <result_15> <result_16> <result_19> <result_22> <result_25> <result_26> <result_27> <result_28> <result_29> <result_31> 
+WARNING:Xst:1710 - FF/Latch <exp_common_1> (without init value) has a constant value of 0 in block <u_add>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <exp_common_7> (without init value) has a constant value of 1 in block <u_add>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <result_31> (without init value) has a constant value of 0 in block <u_add>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <result_0> (without init value) has a constant value of 0 in block <u_mul>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <result_17> (without init value) has a constant value of 1 in block <u_mul>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2404 -  FFs/Latches <result<31:31>> (without init value) have a constant value of 0 in block <adder_float>.
+WARNING:Xst:2404 -  FFs/Latches <result<31:31>> (without init value) have a constant value of 0 in block <fp_multiplier_32>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 6
+ 24-bit subtractor                                     : 1
+ 25-bit adder                                          : 1
+ 8-bit adder                                           : 1
+ 8-bit subtractor                                      : 3
+# Registers                                            : 267
+ Flip-Flops                                            : 267
+# Comparators                                          : 3
+ 24-bit comparator lessequal                           : 1
+ 8-bit comparator greater                              : 2
+# Multiplexers                                         : 85
+ 1-bit 2-to-1 multiplexer                              : 53
+ 24-bit 2-to-1 multiplexer                             : 7
+ 25-bit 2-to-1 multiplexer                             : 2
+ 32-bit 4-to-1 multiplexer                             : 1
+ 5-bit 2-to-1 multiplexer                              : 21
+ 8-bit 2-to-1 multiplexer                              : 1
+# Logic shifters                                       : 5
+ 24-bit shifter logical left                           : 1
+ 24-bit shifter logical right                          : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <exp_common_1> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <exp_common_2> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <exp_common_3> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <exp_common_4> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <exp_common_5> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <exp_common_6> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <exp_common_7> (without init value) has a constant value of 1 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <result_30> (without init value) has a constant value of 1 in block <fp_multiplier_32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_29> (without init value) has a constant value of 0 in block <fp_multiplier_32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_28> (without init value) has a constant value of 0 in block <fp_multiplier_32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_27> (without init value) has a constant value of 0 in block <fp_multiplier_32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_26> (without init value) has a constant value of 0 in block <fp_multiplier_32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_25> (without init value) has a constant value of 0 in block <fp_multiplier_32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_24> (without init value) has a constant value of 1 in block <fp_multiplier_32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_23> (without init value) has a constant value of 1 in block <fp_multiplier_32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_22> (without init value) has a constant value of 0 in block <fp_multiplier_32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_21> (without init value) has a constant value of 1 in block <fp_multiplier_32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_20> (without init value) has a constant value of 1 in block <fp_multiplier_32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_19> (without init value) has a constant value of 0 in block <fp_multiplier_32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_18> (without init value) has a constant value of 1 in block <fp_multiplier_32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_17> (without init value) has a constant value of 1 in block <fp_multiplier_32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_16> (without init value) has a constant value of 0 in block <fp_multiplier_32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_15> (without init value) has a constant value of 0 in block <fp_multiplier_32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_14> (without init value) has a constant value of 0 in block <fp_multiplier_32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_13> (without init value) has a constant value of 0 in block <fp_multiplier_32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_12> (without init value) has a constant value of 0 in block <fp_multiplier_32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_11> (without init value) has a constant value of 0 in block <fp_multiplier_32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_10> (without init value) has a constant value of 0 in block <fp_multiplier_32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_9> (without init value) has a constant value of 0 in block <fp_multiplier_32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_8> (without init value) has a constant value of 0 in block <fp_multiplier_32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_7> (without init value) has a constant value of 0 in block <fp_multiplier_32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_6> (without init value) has a constant value of 0 in block <fp_multiplier_32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_5> (without init value) has a constant value of 0 in block <fp_multiplier_32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_4> (without init value) has a constant value of 0 in block <fp_multiplier_32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_3> (without init value) has a constant value of 0 in block <fp_multiplier_32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_2> (without init value) has a constant value of 0 in block <fp_multiplier_32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_1> (without init value) has a constant value of 0 in block <fp_multiplier_32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_0> (without init value) has a constant value of 0 in block <fp_multiplier_32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <mant_result_20> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_result_21> (without init value) has a constant value of 1 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_result_22> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <exp_result_0> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <exp_result_1> (without init value) has a constant value of 1 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <exp_result_2> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <exp_result_3> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <exp_result_4> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <exp_result_5> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <exp_result_6> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <exp_result_7> (without init value) has a constant value of 1 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_b_shifted_23> (without init value) has a constant value of 1 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_b_shifted_22> (without init value) has a constant value of 1 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_b_shifted_21> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_b_shifted_20> (without init value) has a constant value of 1 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_b_shifted_19> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_b_shifted_18> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_b_shifted_17> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_b_shifted_16> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_b_shifted_15> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_result_8> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_result_7> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_result_6> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_result_5> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_result_4> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_result_3> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_result_2> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_result_1> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_result_0> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_result_9> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_result_10> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_result_11> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_result_12> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_result_13> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_result_14> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_result_15> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_result_16> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_result_17> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_result_18> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_result_19> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_a_shifted_19> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_a_shifted_18> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_a_shifted_17> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_a_shifted_16> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_a_shifted_15> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_a_shifted_14> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_a_shifted_13> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_a_shifted_12> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_a_shifted_11> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_a_shifted_10> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_a_shifted_9> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_a_shifted_8> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_a_shifted_7> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_a_shifted_6> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_a_shifted_5> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_a_shifted_4> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_a_shifted_3> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_a_shifted_2> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_a_shifted_1> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_a_shifted_0> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <exp_common_0> (without init value) has a constant value of 1 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_b_shifted_14> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_b_shifted_13> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_b_shifted_12> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_b_shifted_11> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_b_shifted_10> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_b_shifted_9> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_b_shifted_8> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_b_shifted_7> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_b_shifted_6> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_b_shifted_5> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_b_shifted_4> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_b_shifted_3> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_b_shifted_2> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_b_shifted_1> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_b_shifted_0> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_a_shifted_23> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_a_shifted_22> (without init value) has a constant value of 1 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_a_shifted_21> (without init value) has a constant value of 1 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_a_shifted_20> (without init value) has a constant value of 1 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_5> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_4> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_3> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_30> (without init value) has a constant value of 1 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_29> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_28> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_27> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_26> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_25> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_24> (without init value) has a constant value of 1 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_23> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_22> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_21> (without init value) has a constant value of 1 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_20> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_19> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_18> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_17> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_16> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_15> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_14> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_13> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_12> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_11> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_10> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_9> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_8> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_7> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_6> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_sum_0> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_sum_1> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_sum_2> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_sum_3> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_sum_4> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_sum_5> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_sum_6> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_sum_7> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_sum_8> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_sum_9> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_sum_10> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_sum_11> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_sum_12> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_sum_13> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_sum_14> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_sum_15> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_sum_16> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_sum_17> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_sum_18> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_sum_19> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_sum_20> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_sum_21> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_sum_22> (without init value) has a constant value of 1 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_sum_23> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mant_sum_24> (without init value) has a constant value of 1 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_0> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_1> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_2> (without init value) has a constant value of 0 in block <adder_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <mantissa_diff_23> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_0> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_1> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_2> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_3> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_4> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_5> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_6> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_7> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_8> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_9> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_10> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_11> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_12> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_13> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_14> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_15> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_16> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_17> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_18> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_19> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_20> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_31> (without init value) has a constant value of 1 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mantissa_diff_0> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mantissa_diff_1> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mantissa_diff_2> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mantissa_diff_3> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mantissa_diff_4> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mantissa_diff_5> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mantissa_diff_6> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mantissa_diff_7> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mantissa_diff_8> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mantissa_diff_9> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mantissa_diff_10> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mantissa_diff_11> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mantissa_diff_12> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mantissa_diff_13> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mantissa_diff_14> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mantissa_diff_15> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mantissa_diff_16> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mantissa_diff_17> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mantissa_diff_18> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mantissa_diff_19> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mantissa_diff_20> (without init value) has a constant value of 0 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mantissa_diff_21> (without init value) has a constant value of 1 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mantissa_diff_22> (without init value) has a constant value of 1 in block <substractor_float>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <result_28> in Unit <substractor_float> is equivalent to the following FF/Latch, which will be removed : <result_29> 
+
+Optimizing unit <top_fp_operations> ...
+
+Optimizing unit <substractor_float> ...
+INFO:Xst:2261 - The FF/Latch <result_22> in Unit <substractor_float> is equivalent to the following FF/Latch, which will be removed : <result_30> 
+
+Optimizing unit <leading_zero_counter_sync> ...
+WARNING:Xst:1710 - FF/Latch <selected_result_25> (without init value) has a constant value of 0 in block <top_fp_operations>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <selected_result_26> (without init value) has a constant value of 0 in block <top_fp_operations>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <selected_result_27> (without init value) has a constant value of 0 in block <top_fp_operations>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <selected_result_28> (without init value) has a constant value of 0 in block <top_fp_operations>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <selected_result_29> (without init value) has a constant value of 0 in block <top_fp_operations>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_sub/result_28> (without init value) has a constant value of 0 in block <top_fp_operations>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_sub/result_27> (without init value) has a constant value of 0 in block <top_fp_operations>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_sub/result_26> (without init value) has a constant value of 0 in block <top_fp_operations>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_sub/result_25> (without init value) has a constant value of 0 in block <top_fp_operations>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_sub/result_23> (without init value) has a constant value of 0 in block <top_fp_operations>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_sub/result_22> (without init value) has a constant value of 1 in block <top_fp_operations>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_sub/result_21> (without init value) has a constant value of 0 in block <top_fp_operations>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_sub/lzc/count_4> (without init value) has a constant value of 0 in block <top_fp_operations>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_sub/lzc/count_3> (without init value) has a constant value of 0 in block <top_fp_operations>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_sub/lzc/count_2> (without init value) has a constant value of 0 in block <top_fp_operations>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_sub/lzc/count_1> (without init value) has a constant value of 0 in block <top_fp_operations>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_sub/lzc/count_0> (without init value) has a constant value of 1 in block <top_fp_operations>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <selected_result_0> (without init value) has a constant value of 0 in block <top_fp_operations>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <selected_result_1> (without init value) has a constant value of 0 in block <top_fp_operations>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <selected_result_2> (without init value) has a constant value of 0 in block <top_fp_operations>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <selected_result_3> (without init value) has a constant value of 0 in block <top_fp_operations>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <selected_result_4> (without init value) has a constant value of 0 in block <top_fp_operations>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <selected_result_5> (without init value) has a constant value of 0 in block <top_fp_operations>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <selected_result_6> (without init value) has a constant value of 0 in block <top_fp_operations>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <selected_result_7> (without init value) has a constant value of 0 in block <top_fp_operations>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <selected_result_8> (without init value) has a constant value of 0 in block <top_fp_operations>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <selected_result_9> (without init value) has a constant value of 0 in block <top_fp_operations>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <selected_result_10> (without init value) has a constant value of 0 in block <top_fp_operations>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <selected_result_11> (without init value) has a constant value of 0 in block <top_fp_operations>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <selected_result_12> (without init value) has a constant value of 0 in block <top_fp_operations>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <selected_result_13> (without init value) has a constant value of 0 in block <top_fp_operations>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <selected_result_14> (without init value) has a constant value of 0 in block <top_fp_operations>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <selected_result_15> (without init value) has a constant value of 0 in block <top_fp_operations>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <selected_result_16> (without init value) has a constant value of 0 in block <top_fp_operations>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <selected_result_19> (without init value) has a constant value of 0 in block <top_fp_operations>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_sub/result_24> (without init value) has a constant value of 0 in block <top_fp_operations>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <selected_result_21> in Unit <top_fp_operations> is equivalent to the following FF/Latch, which will be removed : <selected_result_24> 
+INFO:Xst:2261 - The FF/Latch <selected_result_17> in Unit <top_fp_operations> is equivalent to the following 3 FFs/Latches, which will be removed : <selected_result_18> <selected_result_20> <selected_result_23> 
+INFO:Xst:2261 - The FF/Latch <selected_result_22> in Unit <top_fp_operations> is equivalent to the following FF/Latch, which will be removed : <selected_result_31> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top_fp_operations, actual ratio is 0.
+FlipFlop selected_result_22 has been replicated 2 time(s) to handle iob=true attribute.
+FlipFlop selected_result_30 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop selected_result_21 has been replicated 2 time(s) to handle iob=true attribute.
+FlipFlop selected_result_17 has been replicated 3 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 12
+ Flip-Flops                                            : 12
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top_fp_operations.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 5
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 3
+# FlipFlops/Latches                : 12
+#      FD                          : 12
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 42
+#      IBUF                        : 2
+#      OBUF                        : 40
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                    4  out of  27288     0%  
+    Number used as Logic:                 4  out of  27288     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      4
+   Number with an unused Flip Flop:       4  out of      4   100%  
+   Number with an unused LUT:             0  out of      4     0%  
+   Number of fully used LUT-FF pairs:     0  out of      4     0%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          43
+ Number of bonded IOBs:                  43  out of    218    19%  
+    IOB Flip Flops/Latches:              12
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 12    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 3.225ns
+   Maximum output required time after clock: 4.118ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 21 / 12
+-------------------------------------------------------------------------
+Offset:              3.225ns (Levels of Logic = 2)
+  Source:            select<0> (PAD)
+  Destination:       selected_result_21 (FF)
+  Destination Clock: clk rising
+
+  Data Path: select<0> to selected_result_21
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.328   0.803  select_0_IBUF (select_0_IBUF)
+     INV:I->O              3   0.255   0.765  Mmux_select[1]_GND_1_o_wide_mux_3_OUT141_INV_0 (select[1]_GND_1_o_wide_mux_3_OUT<21>)
+     FD:D                      0.074          selected_result_21
+    ----------------------------------------
+    Total                      3.225ns (1.657ns logic, 1.568ns route)
+                                       (51.4% logic, 48.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Offset:              4.118ns (Levels of Logic = 1)
+  Source:            selected_result_22_1 (FF)
+  Destination:       result<31> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: selected_result_22_1 to result<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.525   0.681  selected_result_22_1 (selected_result_22_1)
+     OBUF:I->O                 2.912          result_31_OBUF (result<31>)
+    ----------------------------------------
+    Total                      4.118ns (3.437ns logic, 0.681ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.37 secs
+ 
+--> 
+
+Total memory usage is 4503760 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  268 (   0 filtered)
+Number of infos    :    9 (   0 filtered)
+

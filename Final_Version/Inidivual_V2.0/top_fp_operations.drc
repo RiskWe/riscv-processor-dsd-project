@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Sun Jan 05 11:30:45 2025
+
+drc -z top_fp_operations.ncd top_fp_operations.pcf
+
+DRC detected 0 errors and 0 warnings.

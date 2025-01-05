@@ -1,0 +1,27 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Inidivual_V2.0/tb_top_fp_operations_isim_beh.exe -prj E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Inidivual_V2.0/tb_top_fp_operations_beh.prj work.tb_top_fp_operations work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 12
+Turning on mult-threading, number of parallel sub-compilation jobs: 24 
+Determining compilation order of HDL files
+Analyzing Verilog file "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Inidivual_V2.0/substractor_float.v" into library work
+Analyzing Verilog file "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Inidivual_V2.0/fp_multiplier_32.v" into library work
+Analyzing Verilog file "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Inidivual_V2.0/adder_float.v" into library work
+Analyzing Verilog file "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Inidivual_V2.0/top_fp_operations.v" into library work
+Analyzing Verilog file "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Inidivual_V2.0/tb_top_fp_operations.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Inidivual_V2.0/tb_top_fp_operations.v" Line 13: Port leds is not connected to this instance
+Completed static elaboration
+Compiling module adder_float
+Compiling module leading_zero_counter_sync
+Compiling module substractor_float
+Compiling module fp_multiplier_32
+Compiling module top_fp_operations
+Compiling module tb_top_fp_operations
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 7 Verilog Units
+Built simulation executable E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Inidivual_V2.0/tb_top_fp_operations_isim_beh.exe
+Fuse Memory Usage: 28416 KB
+Fuse CPU Usage: 281 ms

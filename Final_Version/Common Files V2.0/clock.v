@@ -1,4 +1,4 @@
-module clock #(parameter DIV_FACTOR = 10000000) (
+module clock #(parameter DIV_FACTOR = 10) (
     input original_clk,  // Input clock (e.g., 100 MHz)
     input tb,            // Testbench signal to bypass the divider
     output reg clk       // Output clock (divided or bypassed)

@@ -1,0 +1,5 @@
+verilog work "../../../../../../Business_Meghana/Final/substractor_float.v"
+verilog work "../../../../../../Business_Meghana/Final/fp_multiplier_32.v"
+verilog work "../../../../../../Business_Meghana/Final/adder_float.v"
+verilog work "../../../../../../Business_Meghana/Final/top_fp_operations.v"
+verilog work "../../../../../../Business_Meghana/Final/tb_top_fp_operations.v"

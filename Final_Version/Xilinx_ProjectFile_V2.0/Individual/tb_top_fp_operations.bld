@@ -1,0 +1,118 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -nt timestamp -uc pinAssign.ucf -p xc6slx45-csg324-2
+tb_top_fp_operations.ngc tb_top_fp_operations.ngd
+
+Reading NGO file
+"E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Xilinx_P
+rojectFile_V2.0/Individual/tb_top_fp_operations.ngc" ...
+Loading design module
+"E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\Xilinx_P
+rojectFile_V2.0\Individual/tb_top_fp_operations.ngc"...
+WARNING:NgdBuild:578 - Design contains no instances.
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "pinAssign.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+ERROR:ConstraintSystem:59 - Constraint <net "clk" loc=L15;> [pinAssign.ucf(2)]:
+   NET "clk" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<net "clk" loc=L15;> [pinAssign.ucf(2)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <net "select[0]" loc=A10;>
+   [pinAssign.ucf(3)]: NET "select[0]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<net "select[0]" loc=A10;> [pinAssign.ucf(3)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <net "select[1]" loc=D14;>
+   [pinAssign.ucf(4)]: NET "select[1]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<net "select[1]" loc=D14;> [pinAssign.ucf(4)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <net "led[0]" loc=M14;>
+   [pinAssign.ucf(7)]: NET "led[0]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<net "led[0]" loc=M14;> [pinAssign.ucf(7)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <net "led[1]" loc=N14;>
+   [pinAssign.ucf(8)]: NET "led[1]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<net "led[1]" loc=N14;> [pinAssign.ucf(8)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <net "led[2]" loc=L14;>
+   [pinAssign.ucf(9)]: NET "led[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<net "led[2]" loc=L14;> [pinAssign.ucf(9)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <net "led[3]" loc=M13;>
+   [pinAssign.ucf(10)]: NET "led[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<net "led[3]" loc=M13;> [pinAssign.ucf(10)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <net "led[4]" loc=D4;>
+   [pinAssign.ucf(11)]: NET "led[4]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<net "led[4]" loc=D4;> [pinAssign.ucf(11)]' could not be found and so the
+   Locate constraint will be removed.
+
+Done...
+
+Checking expanded design ...
+ERROR:NgdBuild:605 - logical root block 'tb_top_fp_operations' with type
+   'tb_top_fp_operations' is unexpanded. Symbol 'tb_top_fp_operations' is not
+   supported in target 'spartan6'.
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     9
+  Number of warnings:   9
+
+Total memory usage is 4398804 kilobytes
+
+Total REAL time to NGDBUILD completion:  3 sec
+Total CPU time to NGDBUILD completion:   3 sec
+
+One or more errors were found during NGDBUILD.  No NGD file will be written.
+
+Writing NGDBUILD log file "tb_top_fp_operations.bld"...

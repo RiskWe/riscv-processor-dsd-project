@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Inidivual_V2.0/tb_top_fp_operations.xst" -ofn "E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Inidivual_V2.0/tb_top_fp_operations.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinAssign.ucf -p xc6slx45-csg324-2 tb_top_fp_operations.ngc tb_top_fp_operations.ngd  

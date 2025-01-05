@@ -1,0 +1,25 @@
+#net "pre_rst" loc=p4;
+net "clk" loc=L15;
+net "select[0]" loc=D14;
+net "select[1]" loc=A10;
+#net "led" loc=U18; //M14
+
+net "leds[7]" loc=N12; //u18
+net "leds[6]" loc=P16; //u18
+net "leds[5]" loc=D4; //u18
+net "leds[4]" loc=M13; //u18
+net "leds[3]" loc=L14; //u18
+net "leds[2]" loc=N14; //u18
+net "leds[1]" loc=M14; //u18
+net "leds[0]" loc=U18; //u18
+
+
+
+#net "ledfetch" loc=M14; //u18
+#net "leddecode" loc=N14; //u18
+#net "ledexecute" loc=L14; //u18
+#net "ledmemory" loc=M13; //u18
+#net "ledwriteback" loc=D4; //u18
+
+
+ 

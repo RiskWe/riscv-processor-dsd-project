@@ -1,0 +1,41 @@
+ISim log file
+Running: E:\Documents\DSD_Group_Final\riscv-processor-dsd-project\Final_Version\Xilinx_ProjectFile_V2.0\Individual\tb_top_fp_operations_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/Final_Version/Xilinx_ProjectFile_V2.0/Individual/tb_top_fp_operations_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Time	Select	Result
+Finished circuit initialization process.
+0	00	xxxxxxxx
+25	00	Xxxxxxxx
+35	00	40Xxxxxx
+45	00	41200000
+200	01	41200000
+205	01	c0400000
+300	10	c0400000
+305	10	41b60000
+400	11	41b60000
+405	11	00000000
+Stopped at time : 600 ns :  in File "E:/Business_Meghana/Final/tb_top_fp_operations.v" Line 51 
+# restart
+# run all
+Simulator is doing circuit initialization process.
+Time	Select	Result
+Finished circuit initialization process.
+0	00	xxxxxxxx
+25	00	Xxxxxxxx
+35	00	40Xxxxxx
+45	00	41200000
+200	01	41200000
+205	01	c0400000
+300	10	c0400000
+305	10	41b60000
+400	11	41b60000
+405	11	00000000
+Stopped at time : 600 ns :  in File "E:/Business_Meghana/Final/tb_top_fp_operations.v" Line 51 
