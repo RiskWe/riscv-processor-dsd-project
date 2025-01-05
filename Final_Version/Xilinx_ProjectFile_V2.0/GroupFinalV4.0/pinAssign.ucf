@@ -3,11 +3,17 @@ net "original_clk" loc=L15;
 
 net "led" loc=U18; //M14
 
-net "leds[0]" loc=M14; //u18
-net "leds[1]" loc=N14; //u18
-net "leds[2]" loc=L14; //u18
-net "leds[3]" loc=M13; //u18
-net "leds[4]" loc=D4; //u18
+#net "leds[0]" loc=M14; //u18
+#net "leds[1]" loc=N14; //u18
+#net "leds[2]" loc=L14; //u18
+#net "leds[3]" loc=M13; //u18
+#net "leds[4]" loc=D4; //u18
+
+net "led_R[0]" loc=M14; //u18
+net "led_R[1]" loc=N14; //u18
+net "led_R[2]" loc=L14; //u18
+net "led_R[3]" loc=M13; //u18
+net "led_R[4]" loc=D4; //u18
 
 net "led_R6" loc=P16;
 

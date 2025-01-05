@@ -1,12 +1,14 @@
 
 module decode_cycle(clk, rst, InstrD, PCD, PCPlus4D, RegWriteW, RDW, ResultW, RegWriteE, ALUSrcE, MemWriteE, ResultSrcE,
-    BranchE,  ALUControlE, RD1_E, RD2_E, Imm_Ext_E, RD_E, PCE, PCPlus4E, RS1_E, RS2_E, led_R6, leddecode);
+    BranchE,  ALUControlE, RD1_E, RD2_E, Imm_Ext_E, RD_E, PCE, PCPlus4E, RS1_E, RS2_E, led_R6, leddecode, leds, led_R);
 
     // Declaring I/O
     input clk, rst, RegWriteW;
     input [4:0] RDW;
     input [31:0] InstrD, PCD, PCPlus4D, ResultW;
 	 
+	 output [4:0] leds;
+	 output [4:0] led_R;
 	 output wire led_R6;
 	 output wire leddecode;
 	 
@@ -58,7 +60,8 @@ module decode_cycle(clk, rst, InstrD, PCD, PCPlus4D, RegWriteW, RDW, ResultW, Re
                         .A3(RDW),
                         .RD1(RD1_D),
                         .RD2(RD2_D),
-								.led_R6(led_R6) //added
+								.led_R6(led_R6),
+								.led_R(led_R)
                         );
 
     // Sign Extension
@@ -70,10 +73,7 @@ module decode_cycle(clk, rst, InstrD, PCD, PCPlus4D, RegWriteW, RDW, ResultW, Re
 
     // Declaring Register Logic
     always @(posedge clk or negedge rst) begin
-        if(rst == 1'b0) begin
-		  
-		      
-					
+        if(rst == 1'b0) begin		
             RegWriteD_r <= 1'b0;
             ALUSrcD_r <= 1'b0;
             MemWriteD_r <= 1'b0;

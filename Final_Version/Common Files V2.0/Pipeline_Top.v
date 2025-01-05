@@ -15,7 +15,7 @@
 `include "Hazard_unit.v"
 
 
-module Pipeline_top(original_clk, pre_rst, led, led_R6, ledfetch, leddecode, ledexecute, ledmemory, ledwriteback, leds);
+module Pipeline_top(original_clk, pre_rst, led, led_R6, ledfetch, leddecode, ledexecute, ledmemory, ledwriteback, leds, led_R);
 
     // Declaration of I/O
     input original_clk, pre_rst;
@@ -27,6 +27,7 @@ module Pipeline_top(original_clk, pre_rst, led, led_R6, ledfetch, leddecode, led
 	 output ledmemory;
 	 output ledwriteback;
 	 output [0:4] leds;
+	 output [0:4] led_R;
 
     // Declaration of Interim Wires
     wire PCSrcE, RegWriteW, RegWriteE, ALUSrcE, MemWriteE, ResultSrcE, BranchE, RegWriteM, MemWriteM, ResultSrcM, ResultSrcW;
@@ -92,7 +93,8 @@ module Pipeline_top(original_clk, pre_rst, led, led_R6, ledfetch, leddecode, led
                         .RS1_E(RS1_E),
                         .RS2_E(RS2_E),
 								.led_R6(led_R6),
-								.leddecode(leddecode)
+								.leddecode(leddecode),
+								.led_R(led_R)
                     );
 
     // Execute Stage

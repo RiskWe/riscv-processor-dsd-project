@@ -24,6 +24,7 @@ module execute_cycle(clk, rst, RegWriteE, ALUSrcE, MemWriteE, ResultSrcE, Branch
     wire [31:0] Src_A, Src_B_interim, Src_B;
     wire [31:0] ResultE;
     wire ZeroE;
+	 
 
     // Declaration of Register
     reg RegWriteE_r, MemWriteE_r, ResultSrcE_r;
@@ -65,7 +66,7 @@ module execute_cycle(clk, rst, RegWriteE, ALUSrcE, MemWriteE, ResultSrcE, Branch
             .OverFlow(),
             .Carry(),
             .Zero(ZeroE),
-            .Negative()
+            .Negative()  //changed
             );
 
     // Adder

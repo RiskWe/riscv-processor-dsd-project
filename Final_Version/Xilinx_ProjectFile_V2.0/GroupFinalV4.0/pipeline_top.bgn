@@ -6,7 +6,7 @@ C:\Xilinx\14.7\ISE_DS\ISE\.
 -2
 Opened constraints file Pipeline_top.pcf.
 
-Sun Jan 05 03:07:06 2025
+Sun Jan 05 08:41:06 2025
 
 C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\bitgen.exe -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g Reset_on_err:No -g ConfigRate:2 -g ProgPin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g ExtMasterCclk_en:No -g SPI_buswidth:1 -g TIMER_CFG:0xFFFF -g multipin_wakeup:No -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:None -g DonePipe:Yes -g DriveDone:No -g en_sw_gsr:No -g drive_awake:No -g sw_clk:Startupclk -g sw_gwe_cycle:5 -g sw_gts_cycle:4 Pipeline_top.ncd 
 
@@ -129,27 +129,29 @@ There were 0 CONFIG constraint(s) processed from Pipeline_top.pcf.
 
 
 Running DRC.
+WARNING:PhysDesignRules:367 - The signal <Decode/rf/Mram_Register21_RAMD_D1_O>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Decode/rf/Mram_Register31_RAMD_D1_O>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Decode/rf/Mram_Register25_RAMD_D1_O>
+   is incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <Decode/rf/Mram_Register22_RAMD_D1_O>
    is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Decode/rf/Mram_Register12_RAMD_D1_O>
+WARNING:PhysDesignRules:367 - The signal <Decode/rf/Mram_Register32_RAMD_D1_O>
    is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Decode/rf/Mram_Register13_RAMD_D1_O>
+WARNING:PhysDesignRules:367 - The signal <Decode/rf/Mram_Register33_RAMD_D1_O>
    is incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <Decode/rf/Mram_Register23_RAMD_D1_O>
    is incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <Decode/rf/Mram_Register24_RAMD_D1_O>
    is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Decode/rf/Mram_Register11_RAMD_D1_O>
+WARNING:PhysDesignRules:367 - The signal <Decode/rf/Mram_Register34_RAMD_D1_O>
    is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Decode/rf/Mram_Register21_RAMD_D1_O>
+WARNING:PhysDesignRules:367 - The signal <Decode/rf/Mram_Register35_RAMD_D1_O>
    is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Decode/rf/Mram_Register14_RAMD_D1_O>
-   is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Decode/rf/Mram_Register25_RAMD_D1_O>
-   is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Decode/rf/Mram_Register15_RAMD_D1_O>
-   is incomplete. The signal does not drive any load pins in the design.
-DRC detected 0 errors and 10 warnings.  Please see the previously displayed
+WARNING:PhysDesignRules:367 - The signal <Decode/rf/Mram_Register2_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+DRC detected 0 errors and 11 warnings.  Please see the previously displayed
 individual error or warning messages for more details.
 Creating bit map...
 Saving bit stream in "pipeline_top.bit".

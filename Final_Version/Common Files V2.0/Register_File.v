@@ -1,16 +1,17 @@
 
-module Register_File(clk,rst,WE3,WD3,A1,A2,A3,RD1,RD2,led_R6);
+module Register_File(clk,rst,WE3,WD3,A1,A2,A3,RD1,RD2,led_R6,led_R);
 
     input clk,rst,WE3;
     input [4:0]A1,A2,A3;
     input [31:0]WD3;
     output [31:0]RD1,RD2;
-	 
+	 output [4:0] led_R;
 	 output wire led_R6;//added
 	 
-	 
-
+	
     reg [31:0] Register [31:0];
+	 
+	 assign led_R = Register[4][4:0];
 	 
 	 assign led_R6 = Register[6][31];
 

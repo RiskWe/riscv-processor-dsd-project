@@ -5,5 +5,20 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="HDLCompiler" num="267" delta="unknown" >"E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/RISCV_SingleCycle/test_bench.v" Line 13: Cannot find port <arg fmt="%s" index="1">PC_top</arg> on this module
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="329" delta="unknown" >"E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/RISCV_SingleCycle/test_bench.v" Line 16: Target &lt;<arg fmt="%s" index="1">PC_in</arg>&gt; of concurrent assignment or output port connection should be a net type.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="25" delta="unknown" >"E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/RISCV_SingleCycle/test_bench.v" Line 17: Module &lt;<arg fmt="%s" index="1">main</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">PC_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"E:/Documents/DSD_Group_Final/riscv-processor-dsd-project/RISCV_SingleCycle/test_bench.v" Line 13: Port <arg fmt="%s" index="1">func3</arg> is not connected to this instance
+</msg>
+
+<msg type="error" file="Simulator" num="778" delta="unknown" >Static elaboration of top level Verilog design unit(s) in library <arg fmt="%s" index="1">work</arg> failed
+</msg>
+
 </messages>
 

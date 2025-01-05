@@ -1,0 +1,31 @@
+Command line:
+   Single_Cycle_Top_Tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  62554
+
+Sun Jan 05 04:46:07 2025
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 5151.34 Meg
+
+ Total Signals          : 86
+ Total Nets             : 405
+ Total Signal Drivers   : 32
+ Total Blocks           : 13
+ Total Primitive Blocks : 10
+ Total Processes        : 42
+ Total Traceable Variables  : 25
+ Total Scalar Nets and Variables : 67084
+Total Line Count : 72
+Total Line Count : 72
+Total Line Count : 72
+
+ Total Simulation Time: 0.1875 sec
+
+ Current Memory Usage: 4679.48 Meg
+
+Sun Jan 05 05:10:42 2025
+

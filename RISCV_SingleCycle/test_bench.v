@@ -48,9 +48,4 @@ initial begin
 	 #10; //Down
     $stop;  // Stop the simulation
 end
-
-// Monitor output
-// Monitor output only on clock edges
-
-
 endmodule
